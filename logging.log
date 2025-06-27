@@ -3423,3 +3423,969 @@ Stacktrace:
 2025-06-27 15:38:22,793 - INFO - Đã lưu topic 'Thể thao & sức khỏe' vào processed_topics.json
 2025-06-27 15:38:22,823 - INFO - Kiểm tra item: offline_recommend/114109301439457198/Kỷ niệm học sinh
 2025-06-27 15:38:22,823 - INFO - Topic 'Kỷ niệm học sinh' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:38:29,067 - INFO - Xử lý topic: Kỷ niệm học sinh trong tab mới
+2025-06-27 15:38:29,199 - INFO - Đã nhập từ khóa: */Kỷ niệm học sinh
+2025-06-27 15:38:29,259 - INFO - Đã nhấn Enter cho từ khóa: */Kỷ niệm học sinh
+2025-06-27 15:38:29,393 - INFO - Đã click nút Bulk Actions cho topic: Kỷ niệm học sinh
+2025-06-27 15:38:29,456 - INFO - Số lượng key tìm được: 'Expected amount: ~2 438 keys'
+2025-06-27 15:38:29,457 - INFO - Chuỗi số thô: '2 438 ', Chuỗi sau xử lý: '2438'
+2025-06-27 15:38:29,457 - INFO - Số key sẽ xóa cho topic Kỷ niệm học sinh: 2438
+2025-06-27 15:38:43,195 - INFO - Đã xóa key cho topic Kỷ niệm học sinh và xác nhận hoàn tất
+2025-06-27 15:38:43,196 - INFO - Đã lưu số key đã xóa: 2438, tổng cộng: 431297 vào key_count.json
+2025-06-27 15:38:43,196 - ERROR - Lỗi khi lưu topic 'Kỷ niệm học sinh' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:38:43,851 - INFO - Đã reload trang sau khi xử lý topic Kỷ niệm học sinh
+2025-06-27 15:38:43,951 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:38:43,952 - INFO - Đã lưu topic 'Kỷ niệm học sinh' vào processed_topics.json
+2025-06-27 15:38:44,071 - INFO - Kiểm tra item: offline_recommend/114231330617495323/Gia đình - Học đường
+2025-06-27 15:38:44,071 - INFO - Topic 'Gia đình - Học đường' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:38:49,651 - INFO - Xử lý topic: Gia đình - Học đường trong tab mới
+2025-06-27 15:38:49,775 - INFO - Đã nhập từ khóa: */Gia đình - Học đường
+2025-06-27 15:38:49,829 - INFO - Đã nhấn Enter cho từ khóa: */Gia đình - Học đường
+2025-06-27 15:38:49,940 - INFO - Đã click nút Bulk Actions cho topic: Gia đình - Học đường
+2025-06-27 15:38:49,986 - INFO - Số lượng key tìm được: 'Expected amount: ~1 828 keys'
+2025-06-27 15:38:49,986 - INFO - Chuỗi số thô: '1 828 ', Chuỗi sau xử lý: '1828'
+2025-06-27 15:38:49,986 - INFO - Số key sẽ xóa cho topic Gia đình - Học đường: 1828
+2025-06-27 15:39:03,429 - INFO - Đã xóa key cho topic Gia đình - Học đường và xác nhận hoàn tất
+2025-06-27 15:39:03,432 - INFO - Đã lưu số key đã xóa: 1828, tổng cộng: 433125 vào key_count.json
+2025-06-27 15:39:03,433 - ERROR - Lỗi khi lưu topic 'Gia đình - Học đường' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:39:03,961 - INFO - Đã reload trang sau khi xử lý topic Gia đình - Học đường
+2025-06-27 15:39:04,102 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:39:04,104 - INFO - Đã lưu topic 'Gia đình - Học đường' vào processed_topics.json
+2025-06-27 15:39:04,203 - INFO - Kiểm tra item: offline_recommend/114654067608119109/Hài hước buồn
+2025-06-27 15:39:04,203 - INFO - Topic 'Hài hước buồn' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:39:09,718 - INFO - Xử lý topic: Hài hước buồn trong tab mới
+2025-06-27 15:39:09,822 - INFO - Đã nhập từ khóa: */Hài hước buồn
+2025-06-27 15:39:09,866 - INFO - Đã nhấn Enter cho từ khóa: */Hài hước buồn
+2025-06-27 15:39:09,971 - INFO - Đã click nút Bulk Actions cho topic: Hài hước buồn
+2025-06-27 15:39:10,010 - INFO - Số lượng key tìm được: 'Expected amount: ~3 655 keys'
+2025-06-27 15:39:10,010 - INFO - Chuỗi số thô: '3 655 ', Chuỗi sau xử lý: '3655'
+2025-06-27 15:39:10,010 - INFO - Số key sẽ xóa cho topic Hài hước buồn: 3655
+2025-06-27 15:39:23,470 - INFO - Đã xóa key cho topic Hài hước buồn và xác nhận hoàn tất
+2025-06-27 15:39:23,474 - INFO - Đã lưu số key đã xóa: 3655, tổng cộng: 436780 vào key_count.json
+2025-06-27 15:39:23,475 - ERROR - Lỗi khi lưu topic 'Hài hước buồn' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:39:24,059 - INFO - Đã reload trang sau khi xử lý topic Hài hước buồn
+2025-06-27 15:39:24,295 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:39:24,296 - INFO - Đã lưu topic 'Hài hước buồn' vào processed_topics.json
+2025-06-27 15:39:24,333 - INFO - Kiểm tra item: offline_recommend/114549572608276690/Y tế - Bệnh viện
+2025-06-27 15:39:24,333 - INFO - Topic 'Y tế - Bệnh viện' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:39:29,671 - INFO - Xử lý topic: Y tế - Bệnh viện trong tab mới
+2025-06-27 15:39:39,888 - INFO - Không tìm thấy INPUT_SEARCH, reload trang (lần 1/3)
+2025-06-27 15:39:45,413 - INFO - Đã nhập từ khóa: */Y tế - Bệnh viện
+2025-06-27 15:39:45,480 - INFO - Đã nhấn Enter cho từ khóa: */Y tế - Bệnh viện
+2025-06-27 15:39:45,622 - INFO - Đã click nút Bulk Actions cho topic: Y tế - Bệnh viện
+2025-06-27 15:39:45,711 - INFO - Số lượng key tìm được: 'Expected amount: ~1 218 keys'
+2025-06-27 15:39:45,711 - INFO - Chuỗi số thô: '1 218 ', Chuỗi sau xử lý: '1218'
+2025-06-27 15:39:45,711 - INFO - Số key sẽ xóa cho topic Y tế - Bệnh viện: 1218
+2025-06-27 15:39:59,150 - INFO - Đã xóa key cho topic Y tế - Bệnh viện và xác nhận hoàn tất
+2025-06-27 15:39:59,151 - INFO - Đã lưu số key đã xóa: 1218, tổng cộng: 437998 vào key_count.json
+2025-06-27 15:39:59,151 - ERROR - Lỗi khi lưu topic 'Y tế - Bệnh viện' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:39:59,573 - INFO - Đã reload trang sau khi xử lý topic Y tế - Bệnh viện
+2025-06-27 15:39:59,703 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:39:59,704 - INFO - Đã lưu topic 'Y tế - Bệnh viện' vào processed_topics.json
+2025-06-27 15:39:59,826 - INFO - Kiểm tra item: offline_recommend/114238027194136903/"Làm cha mẹ"}
+2025-06-27 15:39:59,826 - INFO - Topic '"Làm cha mẹ"}' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:40:05,484 - INFO - Xử lý topic: "Làm cha mẹ"} trong tab mới
+2025-06-27 15:40:05,603 - INFO - Đã nhập từ khóa: */"Làm cha mẹ"}
+2025-06-27 15:40:05,668 - INFO - Đã nhấn Enter cho từ khóa: */"Làm cha mẹ"}
+2025-06-27 15:40:05,800 - INFO - Đã click nút Bulk Actions cho topic: "Làm cha mẹ"}
+2025-06-27 15:40:05,823 - INFO - Số lượng key tìm được: ''
+2025-06-27 15:40:05,843 - INFO - Đã reload trang sau khi xử lý topic "Làm cha mẹ"}
+2025-06-27 15:40:05,921 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:40:05,923 - INFO - Đã lưu topic '"Làm cha mẹ"}' vào processed_topics.json
+2025-06-27 15:40:07,009 - INFO - Kiểm tra item: offline_recommend/114494900056942028/Quán mới
+2025-06-27 15:40:07,009 - INFO - Topic 'Quán mới' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:40:12,540 - INFO - Xử lý topic: Quán mới trong tab mới
+2025-06-27 15:40:22,718 - INFO - Không tìm thấy INPUT_SEARCH, reload trang (lần 1/3)
+2025-06-27 15:40:28,182 - INFO - Đã nhập từ khóa: */Quán mới
+2025-06-27 15:40:28,247 - INFO - Đã nhấn Enter cho từ khóa: */Quán mới
+2025-06-27 15:40:28,481 - INFO - Đã click nút Bulk Actions cho topic: Quán mới
+2025-06-27 15:40:28,578 - INFO - Số lượng key tìm được: 'Expected amount: ~2 031 keys'
+2025-06-27 15:40:28,578 - INFO - Chuỗi số thô: '2 031 ', Chuỗi sau xử lý: '2031'
+2025-06-27 15:40:28,578 - INFO - Số key sẽ xóa cho topic Quán mới: 2031
+2025-06-27 15:40:41,926 - INFO - Đã xóa key cho topic Quán mới và xác nhận hoàn tất
+2025-06-27 15:40:41,928 - INFO - Đã lưu số key đã xóa: 2031, tổng cộng: 440029 vào key_count.json
+2025-06-27 15:40:41,929 - ERROR - Lỗi khi lưu topic 'Quán mới' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:40:42,796 - INFO - Đã reload trang sau khi xử lý topic Quán mới
+2025-06-27 15:40:42,921 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:40:42,922 - INFO - Đã lưu topic 'Quán mới' vào processed_topics.json
+2025-06-27 15:40:43,076 - INFO - Kiểm tra item: offline_recommend/114041806552886550/Nhóm nhảy/biểu diễn
+2025-06-27 15:40:43,076 - INFO - Topic 'biểu diễn' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:40:48,823 - INFO - Xử lý topic: biểu diễn trong tab mới
+2025-06-27 15:40:48,932 - INFO - Đã nhập từ khóa: */biểu diễn
+2025-06-27 15:40:49,079 - INFO - Đã nhấn Enter cho từ khóa: */biểu diễn
+2025-06-27 15:40:49,217 - INFO - Đã click nút Bulk Actions cho topic: biểu diễn
+2025-06-27 15:40:49,296 - INFO - Số lượng key tìm được: 'Expected amount: ~3 655 keys'
+2025-06-27 15:40:49,296 - INFO - Chuỗi số thô: '3 655 ', Chuỗi sau xử lý: '3655'
+2025-06-27 15:40:49,296 - INFO - Số key sẽ xóa cho topic biểu diễn: 3655
+2025-06-27 15:41:04,357 - INFO - Đã xóa key cho topic biểu diễn và xác nhận hoàn tất
+2025-06-27 15:41:04,359 - INFO - Đã lưu số key đã xóa: 3655, tổng cộng: 443684 vào key_count.json
+2025-06-27 15:41:04,359 - ERROR - Lỗi khi lưu topic 'biểu diễn' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:41:04,681 - INFO - Đã reload trang sau khi xử lý topic biểu diễn
+2025-06-27 15:41:04,721 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:41:04,723 - INFO - Đã lưu topic 'biểu diễn' vào processed_topics.json
+2025-06-27 15:41:04,753 - INFO - Kiểm tra item: offline_recommend/114511938620960278/Bình luận sôi nổi
+2025-06-27 15:41:04,753 - INFO - Topic 'Bình luận sôi nổi' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:41:10,296 - INFO - Xử lý topic: Bình luận sôi nổi trong tab mới
+2025-06-27 15:41:10,419 - INFO - Đã nhập từ khóa: */Bình luận sôi nổi
+2025-06-27 15:41:10,466 - INFO - Đã nhấn Enter cho từ khóa: */Bình luận sôi nổi
+2025-06-27 15:41:10,661 - INFO - Đã click nút Bulk Actions cho topic: Bình luận sôi nổi
+2025-06-27 15:41:10,710 - INFO - Số lượng key tìm được: 'Expected amount: ~2 435 keys'
+2025-06-27 15:41:10,710 - INFO - Chuỗi số thô: '2 435 ', Chuỗi sau xử lý: '2435'
+2025-06-27 15:41:10,710 - INFO - Số key sẽ xóa cho topic Bình luận sôi nổi: 2435
+2025-06-27 15:41:24,198 - INFO - Đã xóa key cho topic Bình luận sôi nổi và xác nhận hoàn tất
+2025-06-27 15:41:24,199 - INFO - Đã lưu số key đã xóa: 2435, tổng cộng: 446119 vào key_count.json
+2025-06-27 15:41:24,199 - ERROR - Lỗi khi lưu topic 'Bình luận sôi nổi' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:41:24,220 - INFO - Đã reload trang sau khi xử lý topic Bình luận sôi nổi
+2025-06-27 15:41:24,301 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:41:24,302 - INFO - Đã lưu topic 'Bình luận sôi nổi' vào processed_topics.json
+2025-06-27 15:41:24,344 - INFO - Kiểm tra item: offline_recommend/114031191793290962/Studio lighting
+2025-06-27 15:41:24,344 - INFO - Topic 'Studio lighting' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:41:30,638 - INFO - Xử lý topic: Studio lighting trong tab mới
+2025-06-27 15:41:30,759 - INFO - Đã nhập từ khóa: */Studio lighting
+2025-06-27 15:41:30,808 - INFO - Đã nhấn Enter cho từ khóa: */Studio lighting
+2025-06-27 15:41:30,948 - INFO - Đã click nút Bulk Actions cho topic: Studio lighting
+2025-06-27 15:41:31,017 - INFO - Số lượng key tìm được: 'Expected amount: ~1 826 keys'
+2025-06-27 15:41:31,017 - INFO - Chuỗi số thô: '1 826 ', Chuỗi sau xử lý: '1826'
+2025-06-27 15:41:31,017 - INFO - Số key sẽ xóa cho topic Studio lighting: 1826
+2025-06-27 15:41:44,594 - INFO - Đã xóa key cho topic Studio lighting và xác nhận hoàn tất
+2025-06-27 15:41:44,595 - INFO - Đã lưu số key đã xóa: 1826, tổng cộng: 447945 vào key_count.json
+2025-06-27 15:41:44,596 - ERROR - Lỗi khi lưu topic 'Studio lighting' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:41:45,267 - INFO - Đã reload trang sau khi xử lý topic Studio lighting
+2025-06-27 15:41:45,364 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:41:45,365 - INFO - Đã lưu topic 'Studio lighting' vào processed_topics.json
+2025-06-27 15:41:50,582 - INFO - Đang cuộn trong element LIST để tìm item tại index 27 (lần cuộn 1/10)
+2025-06-27 15:41:50,604 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:41:57,711 - INFO - Đang cuộn trong element LIST để tìm item tại index 27 (lần cuộn 2/10)
+2025-06-27 15:41:57,733 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:41:59,749 - INFO - Kiểm tra item: offline_recommend/114036319927433834/tai nạn xây dựng
+2025-06-27 15:41:59,749 - INFO - Topic 'tai nạn xây dựng' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:42:05,079 - INFO - Xử lý topic: tai nạn xây dựng trong tab mới
+2025-06-27 15:42:15,242 - INFO - Không tìm thấy INPUT_SEARCH, reload trang (lần 1/3)
+2025-06-27 15:42:20,660 - INFO - Đã nhập từ khóa: */tai nạn xây dựng
+2025-06-27 15:42:20,711 - INFO - Đã nhấn Enter cho từ khóa: */tai nạn xây dựng
+2025-06-27 15:42:20,871 - INFO - Đã click nút Bulk Actions cho topic: tai nạn xây dựng
+2025-06-27 15:42:20,917 - INFO - Số lượng key tìm được: 'Expected amount: ~2 435 keys'
+2025-06-27 15:42:20,917 - INFO - Chuỗi số thô: '2 435 ', Chuỗi sau xử lý: '2435'
+2025-06-27 15:42:20,917 - INFO - Số key sẽ xóa cho topic tai nạn xây dựng: 2435
+2025-06-27 15:42:34,418 - INFO - Đã xóa key cho topic tai nạn xây dựng và xác nhận hoàn tất
+2025-06-27 15:42:34,418 - INFO - Đã lưu số key đã xóa: 2435, tổng cộng: 450380 vào key_count.json
+2025-06-27 15:42:34,418 - ERROR - Lỗi khi lưu topic 'tai nạn xây dựng' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:42:34,435 - INFO - Đã reload trang sau khi xử lý topic tai nạn xây dựng
+2025-06-27 15:42:34,481 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:42:34,482 - INFO - Đã lưu topic 'tai nạn xây dựng' vào processed_topics.json
+2025-06-27 15:42:39,582 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 1/10)
+2025-06-27 15:42:39,600 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:42:46,699 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 2/10)
+2025-06-27 15:42:46,718 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:42:53,815 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 3/10)
+2025-06-27 15:42:53,838 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:43:00,939 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 4/10)
+2025-06-27 15:43:00,944 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:43:08,047 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 5/10)
+2025-06-27 15:43:08,068 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:43:15,172 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 6/10)
+2025-06-27 15:43:15,203 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:43:22,307 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 7/10)
+2025-06-27 15:43:22,333 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:43:29,465 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 8/10)
+2025-06-27 15:43:29,484 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:43:36,669 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 9/10)
+2025-06-27 15:43:36,693 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:43:43,802 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 10/10)
+2025-06-27 15:43:43,821 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:43:50,918 - INFO - Đã cuộn 10 lần mà không tìm thấy item tại index 28. Reload trang và bắt đầu lại từ index 1.
+2025-06-27 15:43:57,764 - INFO - Kiểm tra item: offline_recommend/114238020830329265/4954
+2025-06-27 15:43:57,764 - INFO - Topic '4954' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:44:03,750 - INFO - Xử lý topic: 4954 trong tab mới
+2025-06-27 15:44:03,862 - INFO - Đã nhập từ khóa: */4954
+2025-06-27 15:44:03,920 - INFO - Đã nhấn Enter cho từ khóa: */4954
+2025-06-27 15:44:04,046 - INFO - Đã click nút Bulk Actions cho topic: 4954
+2025-06-27 15:44:04,093 - INFO - Số lượng key tìm được: 'Expected amount: ~3 044 keys'
+2025-06-27 15:44:04,094 - INFO - Chuỗi số thô: '3 044 ', Chuỗi sau xử lý: '3044'
+2025-06-27 15:44:04,094 - INFO - Số key sẽ xóa cho topic 4954: 3044
+2025-06-27 15:44:17,609 - INFO - Đã xóa key cho topic 4954 và xác nhận hoàn tất
+2025-06-27 15:44:17,610 - INFO - Đã lưu số key đã xóa: 3044, tổng cộng: 453424 vào key_count.json
+2025-06-27 15:44:17,610 - ERROR - Lỗi khi lưu topic '4954' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:44:17,628 - INFO - Đã reload trang sau khi xử lý topic 4954
+2025-06-27 15:44:17,690 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:44:17,692 - INFO - Đã lưu topic '4954' vào processed_topics.json
+2025-06-27 15:44:17,727 - INFO - Kiểm tra item: offline_recommend/114238025842984328/tình huống xã hội
+2025-06-27 15:44:17,728 - INFO - Topic 'tình huống xã hội' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:44:23,087 - INFO - Xử lý topic: tình huống xã hội trong tab mới
+2025-06-27 15:44:33,248 - INFO - Không tìm thấy INPUT_SEARCH, reload trang (lần 1/3)
+2025-06-27 15:44:38,816 - INFO - Đã nhập từ khóa: */tình huống xã hội
+2025-06-27 15:44:38,945 - INFO - Đã nhấn Enter cho từ khóa: */tình huống xã hội
+2025-06-27 15:44:39,126 - INFO - Đã click nút Bulk Actions cho topic: tình huống xã hội
+2025-06-27 15:44:39,161 - INFO - Số lượng key tìm được: 'Expected amount: ~609 keys'
+2025-06-27 15:44:39,161 - INFO - Chuỗi số thô: '609 ', Chuỗi sau xử lý: '609'
+2025-06-27 15:44:39,161 - INFO - Số key sẽ xóa cho topic tình huống xã hội: 609
+2025-06-27 15:44:52,583 - INFO - Đã xóa key cho topic tình huống xã hội và xác nhận hoàn tất
+2025-06-27 15:44:52,584 - INFO - Đã lưu số key đã xóa: 609, tổng cộng: 454033 vào key_count.json
+2025-06-27 15:44:52,584 - ERROR - Lỗi khi lưu topic 'tình huống xã hội' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:44:52,607 - INFO - Đã reload trang sau khi xử lý topic tình huống xã hội
+2025-06-27 15:44:52,770 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:44:52,772 - INFO - Đã lưu topic 'tình huống xã hội' vào processed_topics.json
+2025-06-27 15:44:52,807 - INFO - Kiểm tra item: offline_recommend/113984534772504955/5122
+2025-06-27 15:44:52,807 - INFO - Topic '5122' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:44:58,911 - INFO - Xử lý topic: 5122 trong tab mới
+2025-06-27 15:44:59,015 - INFO - Đã nhập từ khóa: */5122
+2025-06-27 15:44:59,085 - INFO - Đã nhấn Enter cho từ khóa: */5122
+2025-06-27 15:44:59,218 - INFO - Đã click nút Bulk Actions cho topic: 5122
+2025-06-27 15:44:59,289 - INFO - Số lượng key tìm được: 'Expected amount: ~2 435 keys'
+2025-06-27 15:44:59,289 - INFO - Chuỗi số thô: '2 435 ', Chuỗi sau xử lý: '2435'
+2025-06-27 15:44:59,290 - INFO - Số key sẽ xóa cho topic 5122: 2435
+2025-06-27 15:45:13,056 - INFO - Đã xóa key cho topic 5122 và xác nhận hoàn tất
+2025-06-27 15:45:13,057 - INFO - Đã lưu số key đã xóa: 2435, tổng cộng: 456468 vào key_count.json
+2025-06-27 15:45:13,057 - ERROR - Lỗi khi lưu topic '5122' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:45:13,633 - INFO - Đã reload trang sau khi xử lý topic 5122
+2025-06-27 15:45:13,801 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:45:13,802 - INFO - Đã lưu topic '5122' vào processed_topics.json
+2025-06-27 15:45:13,936 - INFO - Kiểm tra item: offline_recommend/114549552846550107/Máy tính
+2025-06-27 15:45:13,936 - INFO - Topic 'Máy tính' có trong topic.json. Bỏ qua...
+2025-06-27 15:45:13,984 - INFO - Đã cuộn nhanh trong element LIST vì topic có trong topic.json
+2025-06-27 15:45:15,003 - INFO - Kiểm tra item: offline_recommend/114549542185560666/6432
+2025-06-27 15:45:15,003 - INFO - Topic '6432' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:45:20,105 - INFO - Xử lý topic: 6432 trong tab mới
+2025-06-27 15:45:20,253 - INFO - Đã nhập từ khóa: */6432
+2025-06-27 15:45:20,293 - INFO - Đã nhấn Enter cho từ khóa: */6432
+2025-06-27 15:45:20,389 - INFO - Đã click nút Bulk Actions cho topic: 6432
+2025-06-27 15:45:20,423 - INFO - Số lượng key tìm được: 'Expected amount: ~4 869 keys'
+2025-06-27 15:45:20,423 - INFO - Chuỗi số thô: '4 869 ', Chuỗi sau xử lý: '4869'
+2025-06-27 15:45:20,423 - INFO - Số key sẽ xóa cho topic 6432: 4869
+2025-06-27 15:45:33,923 - INFO - Đã xóa key cho topic 6432 và xác nhận hoàn tất
+2025-06-27 15:45:33,924 - INFO - Đã lưu số key đã xóa: 4869, tổng cộng: 461337 vào key_count.json
+2025-06-27 15:45:33,924 - ERROR - Lỗi khi lưu topic '6432' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:45:34,328 - INFO - Đã reload trang sau khi xử lý topic 6432
+2025-06-27 15:45:34,466 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:45:34,467 - INFO - Đã lưu topic '6432' vào processed_topics.json
+2025-06-27 15:45:34,559 - INFO - Kiểm tra item: offline_recommend/113995173197582662/4954
+2025-06-27 15:45:34,559 - INFO - Topic '4954' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:45:40,148 - INFO - Xử lý topic: 4954 trong tab mới
+2025-06-27 15:45:40,225 - INFO - Đã nhập từ khóa: */4954
+2025-06-27 15:45:40,266 - INFO - Đã nhấn Enter cho từ khóa: */4954
+2025-06-27 15:45:40,363 - INFO - Đã click nút Bulk Actions cho topic: 4954
+2025-06-27 15:45:40,389 - INFO - Số lượng key tìm được: 'Expected amount: N/A'
+2025-06-27 15:45:40,389 - INFO - Không có key để xóa cho topic 4954. Reload trang...
+2025-06-27 15:45:40,477 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:45:40,500 - INFO - Kiểm tra item: offline_recommend/113944786989987620/Giao lưu quốc tế
+2025-06-27 15:45:40,500 - INFO - Topic 'Giao lưu quốc tế' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:45:46,831 - INFO - Xử lý topic: Giao lưu quốc tế trong tab mới
+2025-06-27 15:45:46,927 - INFO - Đã nhập từ khóa: */Giao lưu quốc tế
+2025-06-27 15:45:46,970 - INFO - Đã nhấn Enter cho từ khóa: */Giao lưu quốc tế
+2025-06-27 15:45:47,064 - INFO - Đã click nút Bulk Actions cho topic: Giao lưu quốc tế
+2025-06-27 15:45:47,161 - INFO - Số lượng key tìm được: 'Expected amount: ~608 keys'
+2025-06-27 15:45:47,161 - INFO - Chuỗi số thô: '608 ', Chuỗi sau xử lý: '608'
+2025-06-27 15:45:47,161 - INFO - Số key sẽ xóa cho topic Giao lưu quốc tế: 608
+2025-06-27 15:46:00,559 - INFO - Đã xóa key cho topic Giao lưu quốc tế và xác nhận hoàn tất
+2025-06-27 15:46:00,561 - INFO - Đã lưu số key đã xóa: 608, tổng cộng: 461945 vào key_count.json
+2025-06-27 15:46:00,561 - ERROR - Lỗi khi lưu topic 'Giao lưu quốc tế' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:46:01,474 - INFO - Đã reload trang sau khi xử lý topic Giao lưu quốc tế
+2025-06-27 15:46:01,650 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:46:01,651 - INFO - Đã lưu topic 'Giao lưu quốc tế' vào processed_topics.json
+2025-06-27 15:46:01,761 - INFO - Kiểm tra item: offline_recommend/114549556244401036/Nhiếp ảnh
+2025-06-27 15:46:01,761 - INFO - Topic 'Nhiếp ảnh' có trong topic.json. Bỏ qua...
+2025-06-27 15:46:01,837 - INFO - Đã cuộn nhanh trong element LIST vì topic có trong topic.json
+2025-06-27 15:46:02,875 - INFO - Kiểm tra item: offline_recommend/114238027194136903/"Làm cha mẹ"}
+2025-06-27 15:46:02,875 - INFO - Topic '"Làm cha mẹ"}' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:46:08,688 - INFO - Xử lý topic: "Làm cha mẹ"} trong tab mới
+2025-06-27 15:46:08,789 - INFO - Đã nhập từ khóa: */"Làm cha mẹ"}
+2025-06-27 15:46:08,833 - INFO - Đã nhấn Enter cho từ khóa: */"Làm cha mẹ"}
+2025-06-27 15:46:08,929 - INFO - Đã click nút Bulk Actions cho topic: "Làm cha mẹ"}
+2025-06-27 15:46:08,958 - INFO - Số lượng key tìm được: 'Expected amount: ~1 217 keys'
+2025-06-27 15:46:08,958 - INFO - Chuỗi số thô: '1 217 ', Chuỗi sau xử lý: '1217'
+2025-06-27 15:46:08,958 - INFO - Số key sẽ xóa cho topic "Làm cha mẹ"}: 1217
+2025-06-27 15:46:23,555 - INFO - Đã xóa key cho topic "Làm cha mẹ"} và xác nhận hoàn tất
+2025-06-27 15:46:23,556 - INFO - Đã lưu số key đã xóa: 1217, tổng cộng: 463162 vào key_count.json
+2025-06-27 15:46:23,556 - ERROR - Lỗi khi lưu topic '"Làm cha mẹ"}' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:46:24,130 - INFO - Đã reload trang sau khi xử lý topic "Làm cha mẹ"}
+2025-06-27 15:46:24,255 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:46:24,346 - INFO - Kiểm tra item: offline_recommend/113978092467419316/truyện tranh
+2025-06-27 15:46:24,346 - INFO - Topic 'truyện tranh' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:46:29,588 - INFO - Xử lý topic: truyện tranh trong tab mới
+2025-06-27 15:46:39,778 - INFO - Không tìm thấy INPUT_SEARCH, reload trang (lần 1/3)
+2025-06-27 15:46:45,552 - INFO - Đã nhập từ khóa: */truyện tranh
+2025-06-27 15:46:45,597 - INFO - Đã nhấn Enter cho từ khóa: */truyện tranh
+2025-06-27 15:46:45,702 - INFO - Đã click nút Bulk Actions cho topic: truyện tranh
+2025-06-27 15:46:45,730 - INFO - Số lượng key tìm được: 'Expected amount: ~3 651 keys'
+2025-06-27 15:46:45,730 - INFO - Chuỗi số thô: '3 651 ', Chuỗi sau xử lý: '3651'
+2025-06-27 15:46:45,730 - INFO - Số key sẽ xóa cho topic truyện tranh: 3651
+2025-06-27 15:46:59,308 - INFO - Đã xóa key cho topic truyện tranh và xác nhận hoàn tất
+2025-06-27 15:46:59,309 - INFO - Đã lưu số key đã xóa: 3651, tổng cộng: 466813 vào key_count.json
+2025-06-27 15:46:59,309 - ERROR - Lỗi khi lưu topic 'truyện tranh' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:46:59,930 - INFO - Đã reload trang sau khi xử lý topic truyện tranh
+2025-06-27 15:47:00,009 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:47:00,010 - INFO - Đã lưu topic 'truyện tranh' vào processed_topics.json
+2025-06-27 15:47:00,193 - INFO - Kiểm tra item: offline_recommend/114549561838417667/Chuyển đổi vóc dáng
+2025-06-27 15:47:00,194 - INFO - Topic 'Chuyển đổi vóc dáng' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:47:05,844 - INFO - Xử lý topic: Chuyển đổi vóc dáng trong tab mới
+2025-06-27 15:47:05,963 - INFO - Đã nhập từ khóa: */Chuyển đổi vóc dáng
+2025-06-27 15:47:06,008 - INFO - Đã nhấn Enter cho từ khóa: */Chuyển đổi vóc dáng
+2025-06-27 15:47:06,201 - INFO - Đã click nút Bulk Actions cho topic: Chuyển đổi vóc dáng
+2025-06-27 15:47:06,280 - INFO - Số lượng key tìm được: 'Expected amount: ~2 839 keys'
+2025-06-27 15:47:06,280 - INFO - Chuỗi số thô: '2 839 ', Chuỗi sau xử lý: '2839'
+2025-06-27 15:47:06,280 - INFO - Số key sẽ xóa cho topic Chuyển đổi vóc dáng: 2839
+2025-06-27 15:47:20,073 - INFO - Đã xóa key cho topic Chuyển đổi vóc dáng và xác nhận hoàn tất
+2025-06-27 15:47:20,074 - INFO - Đã lưu số key đã xóa: 2839, tổng cộng: 469652 vào key_count.json
+2025-06-27 15:47:20,074 - ERROR - Lỗi khi lưu topic 'Chuyển đổi vóc dáng' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:47:20,314 - INFO - Đã reload trang sau khi xử lý topic Chuyển đổi vóc dáng
+2025-06-27 15:47:20,344 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:47:20,345 - INFO - Đã lưu topic 'Chuyển đổi vóc dáng' vào processed_topics.json
+2025-06-27 15:47:20,374 - INFO - Kiểm tra item: offline_recommend/114549545099100384/Đồng quê Việt Nam
+2025-06-27 15:47:20,374 - INFO - Topic 'Đồng quê Việt Nam' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:47:25,885 - INFO - Xử lý topic: Đồng quê Việt Nam trong tab mới
+2025-06-27 15:47:25,999 - INFO - Đã nhập từ khóa: */Đồng quê Việt Nam
+2025-06-27 15:47:26,049 - INFO - Đã nhấn Enter cho từ khóa: */Đồng quê Việt Nam
+2025-06-27 15:47:26,188 - INFO - Đã click nút Bulk Actions cho topic: Đồng quê Việt Nam
+2025-06-27 15:47:26,226 - INFO - Số lượng key tìm được: 'Expected amount: ~2 433 keys'
+2025-06-27 15:47:26,228 - INFO - Chuỗi số thô: '2 433 ', Chuỗi sau xử lý: '2433'
+2025-06-27 15:47:26,228 - INFO - Số key sẽ xóa cho topic Đồng quê Việt Nam: 2433
+2025-06-27 15:47:39,706 - INFO - Đã xóa key cho topic Đồng quê Việt Nam và xác nhận hoàn tất
+2025-06-27 15:47:39,708 - INFO - Đã lưu số key đã xóa: 2433, tổng cộng: 472085 vào key_count.json
+2025-06-27 15:47:39,708 - ERROR - Lỗi khi lưu topic 'Đồng quê Việt Nam' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:47:40,258 - INFO - Đã reload trang sau khi xử lý topic Đồng quê Việt Nam
+2025-06-27 15:47:40,337 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:47:40,339 - INFO - Đã lưu topic 'Đồng quê Việt Nam' vào processed_topics.json
+2025-06-27 15:47:40,530 - INFO - Kiểm tra item: offline_recommend/113750853312308285/Mô Hình Xe
+2025-06-27 15:47:40,530 - INFO - Topic 'Mô Hình Xe' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:47:46,078 - INFO - Xử lý topic: Mô Hình Xe trong tab mới
+2025-06-27 15:47:46,186 - INFO - Đã nhập từ khóa: */Mô Hình Xe
+2025-06-27 15:47:46,242 - INFO - Đã nhấn Enter cho từ khóa: */Mô Hình Xe
+2025-06-27 15:47:46,414 - INFO - Đã click nút Bulk Actions cho topic: Mô Hình Xe
+2025-06-27 15:47:46,514 - INFO - Số lượng key tìm được: 'Expected amount: ~3 649 keys'
+2025-06-27 15:47:46,514 - INFO - Chuỗi số thô: '3 649 ', Chuỗi sau xử lý: '3649'
+2025-06-27 15:47:46,514 - INFO - Số key sẽ xóa cho topic Mô Hình Xe: 3649
+2025-06-27 15:48:00,306 - INFO - Đã xóa key cho topic Mô Hình Xe và xác nhận hoàn tất
+2025-06-27 15:48:00,307 - INFO - Đã lưu số key đã xóa: 3649, tổng cộng: 475734 vào key_count.json
+2025-06-27 15:48:00,308 - ERROR - Lỗi khi lưu topic 'Mô Hình Xe' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:48:01,099 - INFO - Đã reload trang sau khi xử lý topic Mô Hình Xe
+2025-06-27 15:48:01,244 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:48:01,245 - INFO - Đã lưu topic 'Mô Hình Xe' vào processed_topics.json
+2025-06-27 15:48:01,368 - INFO - Kiểm tra item: offline_recommend/114238036654963981/Dễ Thương
+2025-06-27 15:48:01,368 - INFO - Topic 'Dễ Thương' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:48:07,097 - INFO - Xử lý topic: Dễ Thương trong tab mới
+2025-06-27 15:48:07,392 - INFO - Đã nhập từ khóa: */Dễ Thương
+2025-06-27 15:48:07,472 - INFO - Đã nhấn Enter cho từ khóa: */Dễ Thương
+2025-06-27 15:48:07,690 - INFO - Đã click nút Bulk Actions cho topic: Dễ Thương
+2025-06-27 15:48:07,848 - INFO - Số lượng key tìm được: 'Expected amount: ~2 432 keys'
+2025-06-27 15:48:07,848 - INFO - Chuỗi số thô: '2 432 ', Chuỗi sau xử lý: '2432'
+2025-06-27 15:48:07,848 - INFO - Số key sẽ xóa cho topic Dễ Thương: 2432
+2025-06-27 15:48:22,490 - INFO - Đã xóa key cho topic Dễ Thương và xác nhận hoàn tất
+2025-06-27 15:48:22,491 - INFO - Đã lưu số key đã xóa: 2432, tổng cộng: 478166 vào key_count.json
+2025-06-27 15:48:22,491 - ERROR - Lỗi khi lưu topic 'Dễ Thương' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:48:23,106 - INFO - Đã reload trang sau khi xử lý topic Dễ Thương
+2025-06-27 15:48:23,263 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:48:23,264 - INFO - Đã lưu topic 'Dễ Thương' vào processed_topics.json
+2025-06-27 15:48:23,405 - INFO - Kiểm tra item: offline_recommend/114445498821102893/Mua sắm đầu năm
+2025-06-27 15:48:23,405 - INFO - Topic 'Mua sắm đầu năm' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:48:28,939 - INFO - Xử lý topic: Mua sắm đầu năm trong tab mới
+2025-06-27 15:48:29,048 - INFO - Đã nhập từ khóa: */Mua sắm đầu năm
+2025-06-27 15:48:29,093 - INFO - Đã nhấn Enter cho từ khóa: */Mua sắm đầu năm
+2025-06-27 15:48:29,205 - INFO - Đã click nút Bulk Actions cho topic: Mua sắm đầu năm
+2025-06-27 15:48:29,232 - INFO - Số lượng key tìm được: 'Expected amount: ~4 864 keys'
+2025-06-27 15:48:29,232 - INFO - Chuỗi số thô: '4 864 ', Chuỗi sau xử lý: '4864'
+2025-06-27 15:48:29,232 - INFO - Số key sẽ xóa cho topic Mua sắm đầu năm: 4864
+2025-06-27 15:48:43,689 - INFO - Đã xóa key cho topic Mua sắm đầu năm và xác nhận hoàn tất
+2025-06-27 15:48:43,692 - INFO - Đã lưu số key đã xóa: 4864, tổng cộng: 483030 vào key_count.json
+2025-06-27 15:48:43,692 - ERROR - Lỗi khi lưu topic 'Mua sắm đầu năm' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:48:43,969 - INFO - Đã reload trang sau khi xử lý topic Mua sắm đầu năm
+2025-06-27 15:48:44,010 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:48:44,011 - INFO - Đã lưu topic 'Mua sắm đầu năm' vào processed_topics.json
+2025-06-27 15:48:44,043 - INFO - Kiểm tra item: offline_recommend/114238013794181290/4931
+2025-06-27 15:48:44,043 - INFO - Topic '4931' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:48:49,559 - INFO - Xử lý topic: 4931 trong tab mới
+2025-06-27 15:48:49,648 - INFO - Đã nhập từ khóa: */4931
+2025-06-27 15:48:49,693 - INFO - Đã nhấn Enter cho từ khóa: */4931
+2025-06-27 15:48:49,810 - INFO - Đã click nút Bulk Actions cho topic: 4931
+2025-06-27 15:48:49,859 - INFO - Số lượng key tìm được: 'Expected amount: ~1 824 keys'
+2025-06-27 15:48:49,859 - INFO - Chuỗi số thô: '1 824 ', Chuỗi sau xử lý: '1824'
+2025-06-27 15:48:49,859 - INFO - Số key sẽ xóa cho topic 4931: 1824
+2025-06-27 15:49:04,295 - INFO - Đã xóa key cho topic 4931 và xác nhận hoàn tất
+2025-06-27 15:49:04,296 - INFO - Đã lưu số key đã xóa: 1824, tổng cộng: 484854 vào key_count.json
+2025-06-27 15:49:04,296 - ERROR - Lỗi khi lưu topic '4931' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:49:04,317 - INFO - Đã reload trang sau khi xử lý topic 4931
+2025-06-27 15:49:04,389 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:49:04,390 - INFO - Đã lưu topic '4931' vào processed_topics.json
+2025-06-27 15:49:04,418 - INFO - Kiểm tra item: offline_recommend/114549541586260302/Lịch thi đấu
+2025-06-27 15:49:04,418 - INFO - Topic 'Lịch thi đấu' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:49:10,104 - INFO - Xử lý topic: Lịch thi đấu trong tab mới
+2025-06-27 15:49:10,203 - INFO - Đã nhập từ khóa: */Lịch thi đấu
+2025-06-27 15:49:10,250 - INFO - Đã nhấn Enter cho từ khóa: */Lịch thi đấu
+2025-06-27 15:49:10,356 - INFO - Đã click nút Bulk Actions cho topic: Lịch thi đấu
+2025-06-27 15:49:10,395 - INFO - Số lượng key tìm được: 'Expected amount: ~3 647 keys'
+2025-06-27 15:49:10,395 - INFO - Chuỗi số thô: '3 647 ', Chuỗi sau xử lý: '3647'
+2025-06-27 15:49:10,395 - INFO - Số key sẽ xóa cho topic Lịch thi đấu: 3647
+2025-06-27 15:49:23,862 - INFO - Đã xóa key cho topic Lịch thi đấu và xác nhận hoàn tất
+2025-06-27 15:49:23,863 - INFO - Đã lưu số key đã xóa: 3647, tổng cộng: 488501 vào key_count.json
+2025-06-27 15:49:23,863 - ERROR - Lỗi khi lưu topic 'Lịch thi đấu' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:49:24,450 - INFO - Đã reload trang sau khi xử lý topic Lịch thi đấu
+2025-06-27 15:49:24,551 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:49:24,552 - INFO - Đã lưu topic 'Lịch thi đấu' vào processed_topics.json
+2025-06-27 15:49:24,616 - INFO - Kiểm tra item: offline_recommend/113945603708112155/Video call
+2025-06-27 15:49:24,616 - INFO - Topic 'Video call' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:49:29,903 - INFO - Xử lý topic: Video call trong tab mới
+2025-06-27 15:49:40,059 - INFO - Không tìm thấy INPUT_SEARCH, reload trang (lần 1/3)
+2025-06-27 15:49:45,435 - INFO - Đã nhập từ khóa: */Video call
+2025-06-27 15:49:45,478 - INFO - Đã nhấn Enter cho từ khóa: */Video call
+2025-06-27 15:49:45,553 - INFO - Đã click nút Bulk Actions cho topic: Video call
+2025-06-27 15:49:45,616 - INFO - Số lượng key tìm được: 'Expected amount: ~3 646 keys'
+2025-06-27 15:49:45,616 - INFO - Chuỗi số thô: '3 646 ', Chuỗi sau xử lý: '3646'
+2025-06-27 15:49:45,616 - INFO - Số key sẽ xóa cho topic Video call: 3646
+2025-06-27 15:49:59,044 - INFO - Đã xóa key cho topic Video call và xác nhận hoàn tất
+2025-06-27 15:49:59,045 - INFO - Đã lưu số key đã xóa: 3646, tổng cộng: 492147 vào key_count.json
+2025-06-27 15:49:59,045 - ERROR - Lỗi khi lưu topic 'Video call' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:49:59,061 - INFO - Đã reload trang sau khi xử lý topic Video call
+2025-06-27 15:49:59,167 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:49:59,168 - INFO - Đã lưu topic 'Video call' vào processed_topics.json
+2025-06-27 15:49:59,194 - INFO - Kiểm tra item: offline_recommend/114171284863441632/Hẹn hò
+2025-06-27 15:49:59,194 - INFO - Topic 'Hẹn hò' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:50:05,323 - INFO - Xử lý topic: Hẹn hò trong tab mới
+2025-06-27 15:50:05,419 - INFO - Đã nhập từ khóa: */Hẹn hò
+2025-06-27 15:50:05,476 - INFO - Đã nhấn Enter cho từ khóa: */Hẹn hò
+2025-06-27 15:50:05,596 - INFO - Đã click nút Bulk Actions cho topic: Hẹn hò
+2025-06-27 15:50:05,674 - INFO - Số lượng key tìm được: 'Expected amount: ~1 823 keys'
+2025-06-27 15:50:05,674 - INFO - Chuỗi số thô: '1 823 ', Chuỗi sau xử lý: '1823'
+2025-06-27 15:50:05,674 - INFO - Số key sẽ xóa cho topic Hẹn hò: 1823
+2025-06-27 15:50:20,155 - INFO - Đã xóa key cho topic Hẹn hò và xác nhận hoàn tất
+2025-06-27 15:50:20,156 - INFO - Đã lưu số key đã xóa: 1823, tổng cộng: 493970 vào key_count.json
+2025-06-27 15:50:20,156 - ERROR - Lỗi khi lưu topic 'Hẹn hò' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:50:20,730 - INFO - Đã reload trang sau khi xử lý topic Hẹn hò
+2025-06-27 15:50:20,869 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:50:20,870 - INFO - Đã lưu topic 'Hẹn hò' vào processed_topics.json
+2025-06-27 15:50:20,922 - INFO - Kiểm tra item: offline_recommend/114550242119762009/5159
+2025-06-27 15:50:20,922 - INFO - Topic '5159' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:50:26,196 - INFO - Xử lý topic: 5159 trong tab mới
+2025-06-27 15:50:36,361 - INFO - Không tìm thấy INPUT_SEARCH, reload trang (lần 1/3)
+2025-06-27 15:50:41,936 - INFO - Đã nhập từ khóa: */5159
+2025-06-27 15:50:41,989 - INFO - Đã nhấn Enter cho từ khóa: */5159
+2025-06-27 15:50:42,129 - INFO - Đã click nút Bulk Actions cho topic: 5159
+2025-06-27 15:50:42,190 - INFO - Số lượng key tìm được: 'Expected amount: ~4 254 keys'
+2025-06-27 15:50:42,190 - INFO - Chuỗi số thô: '4 254 ', Chuỗi sau xử lý: '4254'
+2025-06-27 15:50:42,190 - INFO - Số key sẽ xóa cho topic 5159: 4254
+2025-06-27 15:50:56,720 - INFO - Đã xóa key cho topic 5159 và xác nhận hoàn tất
+2025-06-27 15:50:56,721 - INFO - Đã lưu số key đã xóa: 4254, tổng cộng: 498224 vào key_count.json
+2025-06-27 15:50:56,721 - ERROR - Lỗi khi lưu topic '5159' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:50:57,230 - INFO - Đã reload trang sau khi xử lý topic 5159
+2025-06-27 15:50:57,373 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:50:57,374 - INFO - Đã lưu topic '5159' vào processed_topics.json
+2025-06-27 15:50:57,443 - INFO - Kiểm tra item: offline_recommend/114549589561802805/Khoảnh khắc highlight
+2025-06-27 15:50:57,443 - INFO - Topic 'Khoảnh khắc highlight' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:51:02,931 - INFO - Xử lý topic: Khoảnh khắc highlight trong tab mới
+2025-06-27 15:51:03,139 - INFO - Đã nhập từ khóa: */Khoảnh khắc highlight
+2025-06-27 15:51:03,212 - INFO - Đã nhấn Enter cho từ khóa: */Khoảnh khắc highlight
+2025-06-27 15:51:03,350 - INFO - Đã click nút Bulk Actions cho topic: Khoảnh khắc highlight
+2025-06-27 15:51:03,411 - INFO - Số lượng key tìm được: 'Expected amount: ~608 keys'
+2025-06-27 15:51:03,411 - INFO - Chuỗi số thô: '608 ', Chuỗi sau xử lý: '608'
+2025-06-27 15:51:03,411 - INFO - Số key sẽ xóa cho topic Khoảnh khắc highlight: 608
+2025-06-27 15:51:18,002 - INFO - Đã xóa key cho topic Khoảnh khắc highlight và xác nhận hoàn tất
+2025-06-27 15:51:18,003 - INFO - Đã lưu số key đã xóa: 608, tổng cộng: 498832 vào key_count.json
+2025-06-27 15:51:18,004 - ERROR - Lỗi khi lưu topic 'Khoảnh khắc highlight' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:51:18,334 - INFO - Đã reload trang sau khi xử lý topic Khoảnh khắc highlight
+2025-06-27 15:51:18,383 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:51:18,385 - INFO - Đã lưu topic 'Khoảnh khắc highlight' vào processed_topics.json
+2025-06-27 15:51:18,422 - INFO - Kiểm tra item: offline_recommend/114215032094451829/Đời sống đô thị
+2025-06-27 15:51:18,423 - INFO - Topic 'Đời sống đô thị' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:51:24,043 - INFO - Xử lý topic: Đời sống đô thị trong tab mới
+2025-06-27 15:51:24,165 - INFO - Đã nhập từ khóa: */Đời sống đô thị
+2025-06-27 15:51:24,219 - INFO - Đã nhấn Enter cho từ khóa: */Đời sống đô thị
+2025-06-27 15:51:24,333 - INFO - Đã click nút Bulk Actions cho topic: Đời sống đô thị
+2025-06-27 15:51:24,395 - INFO - Số lượng key tìm được: 'Expected amount: ~4 252 keys'
+2025-06-27 15:51:24,396 - INFO - Chuỗi số thô: '4 252 ', Chuỗi sau xử lý: '4252'
+2025-06-27 15:51:24,396 - INFO - Số key sẽ xóa cho topic Đời sống đô thị: 4252
+2025-06-27 15:51:38,093 - INFO - Đã xóa key cho topic Đời sống đô thị và xác nhận hoàn tất
+2025-06-27 15:51:38,095 - INFO - Đã lưu số key đã xóa: 4252, tổng cộng: 503084 vào key_count.json
+2025-06-27 15:51:38,095 - ERROR - Lỗi khi lưu topic 'Đời sống đô thị' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:51:38,900 - INFO - Đã reload trang sau khi xử lý topic Đời sống đô thị
+2025-06-27 15:51:39,017 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:51:39,019 - INFO - Đã lưu topic 'Đời sống đô thị' vào processed_topics.json
+2025-06-27 15:51:39,105 - INFO - Kiểm tra item: offline_recommend/114220653612748274/Lãng mạn
+2025-06-27 15:51:39,105 - INFO - Topic 'Lãng mạn' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:51:44,835 - INFO - Xử lý topic: Lãng mạn trong tab mới
+2025-06-27 15:51:44,933 - INFO - Đã nhập từ khóa: */Lãng mạn
+2025-06-27 15:51:44,982 - INFO - Đã nhấn Enter cho từ khóa: */Lãng mạn
+2025-06-27 15:51:45,107 - INFO - Đã click nút Bulk Actions cho topic: Lãng mạn
+2025-06-27 15:51:45,151 - INFO - Số lượng key tìm được: 'Expected amount: ~1 215 keys'
+2025-06-27 15:51:45,151 - INFO - Chuỗi số thô: '1 215 ', Chuỗi sau xử lý: '1215'
+2025-06-27 15:51:45,151 - INFO - Số key sẽ xóa cho topic Lãng mạn: 1215
+2025-06-27 15:51:59,614 - INFO - Đã xóa key cho topic Lãng mạn và xác nhận hoàn tất
+2025-06-27 15:51:59,615 - INFO - Đã lưu số key đã xóa: 1215, tổng cộng: 504299 vào key_count.json
+2025-06-27 15:51:59,615 - ERROR - Lỗi khi lưu topic 'Lãng mạn' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:52:00,288 - INFO - Đã reload trang sau khi xử lý topic Lãng mạn
+2025-06-27 15:52:00,447 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:52:00,448 - INFO - Đã lưu topic 'Lãng mạn' vào processed_topics.json
+2025-06-27 15:52:00,582 - INFO - Kiểm tra item: offline_recommend/114381831023245610/Robot tự chế
+2025-06-27 15:52:00,582 - INFO - Topic 'Robot tự chế' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:52:06,171 - INFO - Xử lý topic: Robot tự chế trong tab mới
+2025-06-27 15:52:06,290 - INFO - Đã nhập từ khóa: */Robot tự chế
+2025-06-27 15:52:06,346 - INFO - Đã nhấn Enter cho từ khóa: */Robot tự chế
+2025-06-27 15:52:06,508 - INFO - Đã click nút Bulk Actions cho topic: Robot tự chế
+2025-06-27 15:52:06,568 - INFO - Số lượng key tìm được: 'Expected amount: ~2 429 keys'
+2025-06-27 15:52:06,568 - INFO - Chuỗi số thô: '2 429 ', Chuỗi sau xử lý: '2429'
+2025-06-27 15:52:06,568 - INFO - Số key sẽ xóa cho topic Robot tự chế: 2429
+2025-06-27 15:52:20,161 - INFO - Đã xóa key cho topic Robot tự chế và xác nhận hoàn tất
+2025-06-27 15:52:20,162 - INFO - Đã lưu số key đã xóa: 2429, tổng cộng: 506728 vào key_count.json
+2025-06-27 15:52:20,163 - ERROR - Lỗi khi lưu topic 'Robot tự chế' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:52:20,180 - INFO - Đã reload trang sau khi xử lý topic Robot tự chế
+2025-06-27 15:52:20,249 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:52:20,250 - INFO - Đã lưu topic 'Robot tự chế' vào processed_topics.json
+2025-06-27 15:52:20,276 - INFO - Kiểm tra item: offline_recommend/113972404761234311/Hình ảnh cá nhân
+2025-06-27 15:52:20,276 - INFO - Topic 'Hình ảnh cá nhân' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:52:26,627 - INFO - Xử lý topic: Hình ảnh cá nhân trong tab mới
+2025-06-27 15:52:26,731 - INFO - Đã nhập từ khóa: */Hình ảnh cá nhân
+2025-06-27 15:52:26,777 - INFO - Đã nhấn Enter cho từ khóa: */Hình ảnh cá nhân
+2025-06-27 15:52:26,893 - INFO - Đã click nút Bulk Actions cho topic: Hình ảnh cá nhân
+2025-06-27 15:52:26,936 - INFO - Số lượng key tìm được: 'Expected amount: ~3 643 keys'
+2025-06-27 15:52:26,936 - INFO - Chuỗi số thô: '3 643 ', Chuỗi sau xử lý: '3643'
+2025-06-27 15:52:26,936 - INFO - Số key sẽ xóa cho topic Hình ảnh cá nhân: 3643
+2025-06-27 15:52:40,626 - INFO - Đã xóa key cho topic Hình ảnh cá nhân và xác nhận hoàn tất
+2025-06-27 15:52:40,629 - INFO - Đã lưu số key đã xóa: 3643, tổng cộng: 510371 vào key_count.json
+2025-06-27 15:52:40,629 - ERROR - Lỗi khi lưu topic 'Hình ảnh cá nhân' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:52:41,112 - INFO - Đã reload trang sau khi xử lý topic Hình ảnh cá nhân
+2025-06-27 15:52:41,247 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:52:41,248 - INFO - Đã lưu topic 'Hình ảnh cá nhân' vào processed_topics.json
+2025-06-27 15:52:41,293 - INFO - Kiểm tra item: offline_recommend/114031240344802757/Phim Hàn Quốc
+2025-06-27 15:52:41,293 - INFO - Topic 'Phim Hàn Quốc' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:52:46,504 - INFO - Xử lý topic: Phim Hàn Quốc trong tab mới
+2025-06-27 15:52:56,812 - INFO - Không tìm thấy INPUT_SEARCH, reload trang (lần 1/3)
+2025-06-27 15:53:02,285 - INFO - Đã nhập từ khóa: */Phim Hàn Quốc
+2025-06-27 15:53:02,330 - INFO - Đã nhấn Enter cho từ khóa: */Phim Hàn Quốc
+2025-06-27 15:53:02,408 - INFO - Đã click nút Bulk Actions cho topic: Phim Hàn Quốc
+2025-06-27 15:53:02,486 - INFO - Số lượng key tìm được: 'Expected amount: ~2 428 keys'
+2025-06-27 15:53:02,486 - INFO - Chuỗi số thô: '2 428 ', Chuỗi sau xử lý: '2428'
+2025-06-27 15:53:02,486 - INFO - Số key sẽ xóa cho topic Phim Hàn Quốc: 2428
+2025-06-27 15:53:17,049 - INFO - Đã xóa key cho topic Phim Hàn Quốc và xác nhận hoàn tất
+2025-06-27 15:53:17,051 - INFO - Đã lưu số key đã xóa: 2428, tổng cộng: 512799 vào key_count.json
+2025-06-27 15:53:17,052 - ERROR - Lỗi khi lưu topic 'Phim Hàn Quốc' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:53:17,681 - INFO - Đã reload trang sau khi xử lý topic Phim Hàn Quốc
+2025-06-27 15:53:17,859 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:53:17,862 - INFO - Đã lưu topic 'Phim Hàn Quốc' vào processed_topics.json
+2025-06-27 15:53:23,159 - INFO - Đang cuộn trong element LIST để tìm item tại index 27 (lần cuộn 1/10)
+2025-06-27 15:53:23,184 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:53:30,280 - INFO - Đang cuộn trong element LIST để tìm item tại index 27 (lần cuộn 2/10)
+2025-06-27 15:53:30,300 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:53:32,315 - INFO - Kiểm tra item: offline_recommend/114220646728334259/Giải đấu quốc tế
+2025-06-27 15:53:32,315 - INFO - Topic 'Giải đấu quốc tế' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:53:37,800 - INFO - Xử lý topic: Giải đấu quốc tế trong tab mới
+2025-06-27 15:53:37,926 - INFO - Đã nhập từ khóa: */Giải đấu quốc tế
+2025-06-27 15:53:37,974 - INFO - Đã nhấn Enter cho từ khóa: */Giải đấu quốc tế
+2025-06-27 15:53:38,092 - INFO - Đã click nút Bulk Actions cho topic: Giải đấu quốc tế
+2025-06-27 15:53:38,136 - INFO - Số lượng key tìm được: 'Expected amount: ~1 821 keys'
+2025-06-27 15:53:38,136 - INFO - Chuỗi số thô: '1 821 ', Chuỗi sau xử lý: '1821'
+2025-06-27 15:53:38,136 - INFO - Số key sẽ xóa cho topic Giải đấu quốc tế: 1821
+2025-06-27 15:53:52,588 - INFO - Đã xóa key cho topic Giải đấu quốc tế và xác nhận hoàn tất
+2025-06-27 15:53:52,588 - INFO - Đã lưu số key đã xóa: 1821, tổng cộng: 514620 vào key_count.json
+2025-06-27 15:53:52,589 - ERROR - Lỗi khi lưu topic 'Giải đấu quốc tế' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:53:52,605 - INFO - Đã reload trang sau khi xử lý topic Giải đấu quốc tế
+2025-06-27 15:53:52,679 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:53:52,681 - INFO - Đã lưu topic 'Giải đấu quốc tế' vào processed_topics.json
+2025-06-27 15:53:57,796 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 1/10)
+2025-06-27 15:53:57,819 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:54:04,919 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 2/10)
+2025-06-27 15:54:04,940 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:54:12,048 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 3/10)
+2025-06-27 15:54:12,067 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:54:19,164 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 4/10)
+2025-06-27 15:54:19,185 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:54:26,279 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 5/10)
+2025-06-27 15:54:26,296 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:54:33,393 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 6/10)
+2025-06-27 15:54:33,412 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:54:40,510 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 7/10)
+2025-06-27 15:54:40,535 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:54:47,654 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 8/10)
+2025-06-27 15:54:47,675 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:54:54,933 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 9/10)
+2025-06-27 15:54:54,953 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:55:02,055 - INFO - Đang cuộn trong element LIST để tìm item tại index 28 (lần cuộn 10/10)
+2025-06-27 15:55:02,089 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 15:55:09,179 - INFO - Đã cuộn 10 lần mà không tìm thấy item tại index 28. Reload trang và bắt đầu lại từ index 1.
+2025-06-27 15:55:14,228 - INFO - Kiểm tra item: offline_recommend/114549567909394431/4673
+2025-06-27 15:55:14,228 - INFO - Topic '4673' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:55:19,880 - INFO - Xử lý topic: 4673 trong tab mới
+2025-06-27 15:55:20,000 - INFO - Đã nhập từ khóa: */4673
+2025-06-27 15:55:20,048 - INFO - Đã nhấn Enter cho từ khóa: */4673
+2025-06-27 15:55:20,164 - INFO - Đã click nút Bulk Actions cho topic: 4673
+2025-06-27 15:55:20,234 - INFO - Số lượng key tìm được: 'Expected amount: ~3 035 keys'
+2025-06-27 15:55:20,234 - INFO - Chuỗi số thô: '3 035 ', Chuỗi sau xử lý: '3035'
+2025-06-27 15:55:20,234 - INFO - Số key sẽ xóa cho topic 4673: 3035
+2025-06-27 15:55:33,939 - INFO - Đã xóa key cho topic 4673 và xác nhận hoàn tất
+2025-06-27 15:55:33,940 - INFO - Đã lưu số key đã xóa: 3035, tổng cộng: 517655 vào key_count.json
+2025-06-27 15:55:33,941 - ERROR - Lỗi khi lưu topic '4673' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:55:33,961 - INFO - Đã reload trang sau khi xử lý topic 4673
+2025-06-27 15:55:34,028 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:55:34,029 - INFO - Đã lưu topic '4673' vào processed_topics.json
+2025-06-27 15:55:34,082 - INFO - Kiểm tra item: offline_recommend/114549552846550107/Máy tính
+2025-06-27 15:55:34,082 - INFO - Topic 'Máy tính' có trong topic.json. Bỏ qua...
+2025-06-27 15:55:34,151 - INFO - Đã cuộn nhanh trong element LIST vì topic có trong topic.json
+2025-06-27 15:55:35,174 - INFO - Kiểm tra item: offline_recommend/114549556244401036/Nhiếp ảnh
+2025-06-27 15:55:35,174 - INFO - Topic 'Nhiếp ảnh' có trong topic.json. Bỏ qua...
+2025-06-27 15:55:35,211 - INFO - Đã cuộn nhanh trong element LIST vì topic có trong topic.json
+2025-06-27 15:55:36,234 - INFO - Kiểm tra item: offline_recommend/114549576120368635/Tội phạm mạng
+2025-06-27 15:55:36,234 - INFO - Topic 'Tội phạm mạng' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:55:42,710 - INFO - Xử lý topic: Tội phạm mạng trong tab mới
+2025-06-27 15:55:42,841 - INFO - Đã nhập từ khóa: */Tội phạm mạng
+2025-06-27 15:55:42,891 - INFO - Đã nhấn Enter cho từ khóa: */Tội phạm mạng
+2025-06-27 15:55:43,007 - INFO - Đã click nút Bulk Actions cho topic: Tội phạm mạng
+2025-06-27 15:55:43,075 - INFO - Số lượng key tìm được: 'Expected amount: ~1 820 keys'
+2025-06-27 15:55:43,075 - INFO - Chuỗi số thô: '1 820 ', Chuỗi sau xử lý: '1820'
+2025-06-27 15:55:43,076 - INFO - Số key sẽ xóa cho topic Tội phạm mạng: 1820
+2025-06-27 15:55:56,992 - INFO - Đã xóa key cho topic Tội phạm mạng và xác nhận hoàn tất
+2025-06-27 15:55:56,993 - INFO - Đã lưu số key đã xóa: 1820, tổng cộng: 519475 vào key_count.json
+2025-06-27 15:55:56,993 - ERROR - Lỗi khi lưu topic 'Tội phạm mạng' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:55:57,011 - INFO - Đã reload trang sau khi xử lý topic Tội phạm mạng
+2025-06-27 15:55:57,095 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:55:57,096 - INFO - Đã lưu topic 'Tội phạm mạng' vào processed_topics.json
+2025-06-27 15:55:57,119 - INFO - Kiểm tra item: offline_recommend/114238033603150624/Văn hóa – Tín ngưỡng
+2025-06-27 15:55:57,119 - INFO - Topic 'Văn hóa – Tín ngưỡng' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:56:03,166 - INFO - Xử lý topic: Văn hóa – Tín ngưỡng trong tab mới
+2025-06-27 15:56:03,279 - INFO - Đã nhập từ khóa: */Văn hóa – Tín ngưỡng
+2025-06-27 15:56:03,324 - INFO - Đã nhấn Enter cho từ khóa: */Văn hóa – Tín ngưỡng
+2025-06-27 15:56:03,436 - INFO - Đã click nút Bulk Actions cho topic: Văn hóa – Tín ngưỡng
+2025-06-27 15:56:03,496 - INFO - Số lượng key tìm được: 'Expected amount: ~3 034 keys'
+2025-06-27 15:56:03,496 - INFO - Chuỗi số thô: '3 034 ', Chuỗi sau xử lý: '3034'
+2025-06-27 15:56:03,496 - INFO - Số key sẽ xóa cho topic Văn hóa – Tín ngưỡng: 3034
+2025-06-27 15:56:17,062 - INFO - Đã xóa key cho topic Văn hóa – Tín ngưỡng và xác nhận hoàn tất
+2025-06-27 15:56:17,063 - INFO - Đã lưu số key đã xóa: 3034, tổng cộng: 522509 vào key_count.json
+2025-06-27 15:56:17,063 - ERROR - Lỗi khi lưu topic 'Văn hóa – Tín ngưỡng' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:56:17,080 - INFO - Đã reload trang sau khi xử lý topic Văn hóa – Tín ngưỡng
+2025-06-27 15:56:17,161 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:56:17,163 - INFO - Đã lưu topic 'Văn hóa – Tín ngưỡng' vào processed_topics.json
+2025-06-27 15:56:17,191 - INFO - Kiểm tra item: offline_recommend/114063822846428261/Nhóm sáng tạo nội dung
+2025-06-27 15:56:17,191 - INFO - Topic 'Nhóm sáng tạo nội dung' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:56:23,168 - INFO - Xử lý topic: Nhóm sáng tạo nội dung trong tab mới
+2025-06-27 15:56:23,343 - INFO - Đã nhập từ khóa: */Nhóm sáng tạo nội dung
+2025-06-27 15:56:23,409 - INFO - Đã nhấn Enter cho từ khóa: */Nhóm sáng tạo nội dung
+2025-06-27 15:56:23,535 - INFO - Đã click nút Bulk Actions cho topic: Nhóm sáng tạo nội dung
+2025-06-27 15:56:23,594 - INFO - Số lượng key tìm được: 'Expected amount: ~3 640 keys'
+2025-06-27 15:56:23,594 - INFO - Chuỗi số thô: '3 640 ', Chuỗi sau xử lý: '3640'
+2025-06-27 15:56:23,594 - INFO - Số key sẽ xóa cho topic Nhóm sáng tạo nội dung: 3640
+2025-06-27 15:56:37,034 - INFO - Đã xóa key cho topic Nhóm sáng tạo nội dung và xác nhận hoàn tất
+2025-06-27 15:56:37,035 - INFO - Đã lưu số key đã xóa: 3640, tổng cộng: 526149 vào key_count.json
+2025-06-27 15:56:37,035 - ERROR - Lỗi khi lưu topic 'Nhóm sáng tạo nội dung' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:56:38,038 - INFO - Đã reload trang sau khi xử lý topic Nhóm sáng tạo nội dung
+2025-06-27 15:56:38,257 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:56:38,259 - INFO - Đã lưu topic 'Nhóm sáng tạo nội dung' vào processed_topics.json
+2025-06-27 15:56:38,296 - INFO - Kiểm tra item: offline_recommend/114549577950576076/Cute overload
+2025-06-27 15:56:38,296 - INFO - Topic 'Cute overload' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:56:43,881 - INFO - Xử lý topic: Cute overload trong tab mới
+2025-06-27 15:56:43,978 - INFO - Đã nhập từ khóa: */Cute overload
+2025-06-27 15:56:44,030 - INFO - Đã nhấn Enter cho từ khóa: */Cute overload
+2025-06-27 15:56:44,144 - INFO - Đã click nút Bulk Actions cho topic: Cute overload
+2025-06-27 15:56:44,201 - INFO - Số lượng key tìm được: 'Expected amount: ~2 426 keys'
+2025-06-27 15:56:44,201 - INFO - Chuỗi số thô: '2 426 ', Chuỗi sau xử lý: '2426'
+2025-06-27 15:56:44,201 - INFO - Số key sẽ xóa cho topic Cute overload: 2426
+2025-06-27 15:56:57,794 - INFO - Đã xóa key cho topic Cute overload và xác nhận hoàn tất
+2025-06-27 15:56:57,795 - INFO - Đã lưu số key đã xóa: 2426, tổng cộng: 528575 vào key_count.json
+2025-06-27 15:56:57,795 - ERROR - Lỗi khi lưu topic 'Cute overload' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:56:57,815 - INFO - Đã reload trang sau khi xử lý topic Cute overload
+2025-06-27 15:56:57,901 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:56:57,902 - INFO - Đã lưu topic 'Cute overload' vào processed_topics.json
+2025-06-27 15:56:57,930 - INFO - Kiểm tra item: offline_recommend/114549555416689249/Drama nhẹ
+2025-06-27 15:56:57,930 - INFO - Topic 'Drama nhẹ' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:57:04,230 - INFO - Xử lý topic: Drama nhẹ trong tab mới
+2025-06-27 15:57:04,339 - INFO - Đã nhập từ khóa: */Drama nhẹ
+2025-06-27 15:57:04,393 - INFO - Đã nhấn Enter cho từ khóa: */Drama nhẹ
+2025-06-27 15:57:04,499 - INFO - Đã click nút Bulk Actions cho topic: Drama nhẹ
+2025-06-27 15:57:04,580 - INFO - Số lượng key tìm được: 'Expected amount: ~4 245 keys'
+2025-06-27 15:57:04,581 - INFO - Chuỗi số thô: '4 245 ', Chuỗi sau xử lý: '4245'
+2025-06-27 15:57:04,581 - INFO - Số key sẽ xóa cho topic Drama nhẹ: 4245
+2025-06-27 15:57:18,134 - INFO - Đã xóa key cho topic Drama nhẹ và xác nhận hoàn tất
+2025-06-27 15:57:18,135 - INFO - Đã lưu số key đã xóa: 4245, tổng cộng: 532820 vào key_count.json
+2025-06-27 15:57:18,135 - ERROR - Lỗi khi lưu topic 'Drama nhẹ' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:57:18,714 - INFO - Đã reload trang sau khi xử lý topic Drama nhẹ
+2025-06-27 15:57:18,855 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:57:18,857 - INFO - Đã lưu topic 'Drama nhẹ' vào processed_topics.json
+2025-06-27 15:57:19,018 - INFO - Kiểm tra item: offline_recommend/114549580010746729/tin tức
+2025-06-27 15:57:19,018 - INFO - Topic 'tin tức' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:57:24,687 - INFO - Xử lý topic: tin tức trong tab mới
+2025-06-27 15:57:24,795 - INFO - Đã nhập từ khóa: */tin tức
+2025-06-27 15:57:24,847 - INFO - Đã nhấn Enter cho từ khóa: */tin tức
+2025-06-27 15:57:24,967 - INFO - Đã click nút Bulk Actions cho topic: tin tức
+2025-06-27 15:57:25,045 - INFO - Số lượng key tìm được: 'Expected amount: ~1 819 keys'
+2025-06-27 15:57:25,045 - INFO - Chuỗi số thô: '1 819 ', Chuỗi sau xử lý: '1819'
+2025-06-27 15:57:25,045 - INFO - Số key sẽ xóa cho topic tin tức: 1819
+2025-06-27 15:57:38,609 - INFO - Đã xóa key cho topic tin tức và xác nhận hoàn tất
+2025-06-27 15:57:38,610 - INFO - Đã lưu số key đã xóa: 1819, tổng cộng: 534639 vào key_count.json
+2025-06-27 15:57:38,610 - ERROR - Lỗi khi lưu topic 'tin tức' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:57:38,867 - INFO - Đã reload trang sau khi xử lý topic tin tức
+2025-06-27 15:57:38,908 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:57:38,909 - INFO - Đã lưu topic 'tin tức' vào processed_topics.json
+2025-06-27 15:57:38,939 - INFO - Kiểm tra item: offline_recommend/114549584575232802/Đời sống người Việt ở nước ngoài
+2025-06-27 15:57:38,940 - INFO - Topic 'Đời sống người Việt ở nước ngoài' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:57:44,492 - INFO - Xử lý topic: Đời sống người Việt ở nước ngoài trong tab mới
+2025-06-27 15:57:44,652 - INFO - Đã nhập từ khóa: */Đời sống người Việt ở nước ngoài
+2025-06-27 15:57:44,702 - INFO - Đã nhấn Enter cho từ khóa: */Đời sống người Việt ở nước ngoài
+2025-06-27 15:57:44,795 - INFO - Đã click nút Bulk Actions cho topic: Đời sống người Việt ở nước ngoài
+2025-06-27 15:57:44,845 - INFO - Số lượng key tìm được: 'Expected amount: ~2 425 keys'
+2025-06-27 15:57:44,845 - INFO - Chuỗi số thô: '2 425 ', Chuỗi sau xử lý: '2425'
+2025-06-27 15:57:44,845 - INFO - Số key sẽ xóa cho topic Đời sống người Việt ở nước ngoài: 2425
+2025-06-27 15:57:58,605 - INFO - Đã xóa key cho topic Đời sống người Việt ở nước ngoài và xác nhận hoàn tất
+2025-06-27 15:57:58,605 - INFO - Đã lưu số key đã xóa: 2425, tổng cộng: 537064 vào key_count.json
+2025-06-27 15:57:58,606 - ERROR - Lỗi khi lưu topic 'Đời sống người Việt ở nước ngoài' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:57:58,626 - INFO - Đã reload trang sau khi xử lý topic Đời sống người Việt ở nước ngoài
+2025-06-27 15:57:58,702 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:57:58,704 - INFO - Đã lưu topic 'Đời sống người Việt ở nước ngoài' vào processed_topics.json
+2025-06-27 15:57:58,726 - INFO - Kiểm tra item: offline_recommend/114119888382034820/Du lịch lớp
+2025-06-27 15:57:58,728 - INFO - Topic 'Du lịch lớp' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:58:04,554 - INFO - Xử lý topic: Du lịch lớp trong tab mới
+2025-06-27 15:58:04,666 - INFO - Đã nhập từ khóa: */Du lịch lớp
+2025-06-27 15:58:04,759 - INFO - Đã nhấn Enter cho từ khóa: */Du lịch lớp
+2025-06-27 15:58:04,837 - INFO - Đã click nút Bulk Actions cho topic: Du lịch lớp
+2025-06-27 15:58:04,907 - INFO - Số lượng key tìm được: 'Expected amount: ~1 212 keys'
+2025-06-27 15:58:04,908 - INFO - Chuỗi số thô: '1 212 ', Chuỗi sau xử lý: '1212'
+2025-06-27 15:58:04,908 - INFO - Số key sẽ xóa cho topic Du lịch lớp: 1212
+2025-06-27 15:58:18,473 - INFO - Đã xóa key cho topic Du lịch lớp và xác nhận hoàn tất
+2025-06-27 15:58:18,474 - INFO - Đã lưu số key đã xóa: 1212, tổng cộng: 538276 vào key_count.json
+2025-06-27 15:58:18,474 - ERROR - Lỗi khi lưu topic 'Du lịch lớp' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:58:18,493 - INFO - Đã reload trang sau khi xử lý topic Du lịch lớp
+2025-06-27 15:58:18,581 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:58:18,582 - INFO - Đã lưu topic 'Du lịch lớp' vào processed_topics.json
+2025-06-27 15:58:18,609 - INFO - Kiểm tra item: offline_recommend/114220651259579785/hoạt động ban đêm
+2025-06-27 15:58:18,609 - INFO - Topic 'hoạt động ban đêm' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:58:24,890 - INFO - Xử lý topic: hoạt động ban đêm trong tab mới
+2025-06-27 15:58:25,012 - INFO - Đã nhập từ khóa: */hoạt động ban đêm
+2025-06-27 15:58:25,065 - INFO - Đã nhấn Enter cho từ khóa: */hoạt động ban đêm
+2025-06-27 15:58:25,242 - INFO - Đã click nút Bulk Actions cho topic: hoạt động ban đêm
+2025-06-27 15:58:25,275 - INFO - Số lượng key tìm được: 'Expected amount: ~2 425 keys'
+2025-06-27 15:58:25,275 - INFO - Chuỗi số thô: '2 425 ', Chuỗi sau xử lý: '2425'
+2025-06-27 15:58:25,275 - INFO - Số key sẽ xóa cho topic hoạt động ban đêm: 2425
+2025-06-27 15:58:39,228 - INFO - Đã xóa key cho topic hoạt động ban đêm và xác nhận hoàn tất
+2025-06-27 15:58:39,229 - INFO - Đã lưu số key đã xóa: 2425, tổng cộng: 540701 vào key_count.json
+2025-06-27 15:58:39,229 - ERROR - Lỗi khi lưu topic 'hoạt động ban đêm' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:58:39,948 - INFO - Đã reload trang sau khi xử lý topic hoạt động ban đêm
+2025-06-27 15:58:40,045 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:58:40,046 - INFO - Đã lưu topic 'hoạt động ban đêm' vào processed_topics.json
+2025-06-27 15:58:40,186 - INFO - Kiểm tra item: offline_recommend/113978768637985779/4973
+2025-06-27 15:58:40,186 - INFO - Topic '4973' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:58:45,624 - INFO - Xử lý topic: 4973 trong tab mới
+2025-06-27 15:58:45,722 - INFO - Đã nhập từ khóa: */4973
+2025-06-27 15:58:45,766 - INFO - Đã nhấn Enter cho từ khóa: */4973
+2025-06-27 15:58:45,872 - INFO - Đã click nút Bulk Actions cho topic: 4973
+2025-06-27 15:58:45,923 - INFO - Số lượng key tìm được: 'Expected amount: ~1 212 keys'
+2025-06-27 15:58:45,923 - INFO - Chuỗi số thô: '1 212 ', Chuỗi sau xử lý: '1212'
+2025-06-27 15:58:45,924 - INFO - Số key sẽ xóa cho topic 4973: 1212
+2025-06-27 15:58:59,714 - INFO - Đã xóa key cho topic 4973 và xác nhận hoàn tất
+2025-06-27 15:58:59,715 - INFO - Đã lưu số key đã xóa: 1212, tổng cộng: 541913 vào key_count.json
+2025-06-27 15:58:59,715 - ERROR - Lỗi khi lưu topic '4973' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:59:00,194 - INFO - Đã reload trang sau khi xử lý topic 4973
+2025-06-27 15:59:00,337 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:59:00,339 - INFO - Đã lưu topic '4973' vào processed_topics.json
+2025-06-27 15:59:00,463 - INFO - Kiểm tra item: offline_recommend/114178784606790857/Sách và Văn hóa
+2025-06-27 15:59:00,463 - INFO - Topic 'Sách và Văn hóa' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:59:05,709 - INFO - Xử lý topic: Sách và Văn hóa trong tab mới
+2025-06-27 15:59:15,872 - INFO - Không tìm thấy INPUT_SEARCH, reload trang (lần 1/3)
+2025-06-27 15:59:21,465 - INFO - Đã nhập từ khóa: */Sách và Văn hóa
+2025-06-27 15:59:21,541 - INFO - Đã nhấn Enter cho từ khóa: */Sách và Văn hóa
+2025-06-27 15:59:21,770 - INFO - Đã click nút Bulk Actions cho topic: Sách và Văn hóa
+2025-06-27 15:59:21,845 - INFO - Số lượng key tìm được: 'Expected amount: ~2 020 keys'
+2025-06-27 15:59:21,845 - INFO - Chuỗi số thô: '2 020 ', Chuỗi sau xử lý: '2020'
+2025-06-27 15:59:21,845 - INFO - Số key sẽ xóa cho topic Sách và Văn hóa: 2020
+2025-06-27 15:59:36,033 - INFO - Đã xóa key cho topic Sách và Văn hóa và xác nhận hoàn tất
+2025-06-27 15:59:36,033 - INFO - Đã lưu số key đã xóa: 2020, tổng cộng: 543933 vào key_count.json
+2025-06-27 15:59:36,034 - ERROR - Lỗi khi lưu topic 'Sách và Văn hóa' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:59:36,506 - INFO - Đã reload trang sau khi xử lý topic Sách và Văn hóa
+2025-06-27 15:59:36,652 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:59:36,654 - INFO - Đã lưu topic 'Sách và Văn hóa' vào processed_topics.json
+2025-06-27 15:59:36,799 - INFO - Kiểm tra item: offline_recommend/114238022730083827/Home Life
+2025-06-27 15:59:36,799 - INFO - Topic 'Home Life' không có trong topic.json. Thực hiện xóa...
+2025-06-27 15:59:42,449 - INFO - Xử lý topic: Home Life trong tab mới
+2025-06-27 15:59:42,547 - INFO - Đã nhập từ khóa: */Home Life
+2025-06-27 15:59:42,592 - INFO - Đã nhấn Enter cho từ khóa: */Home Life
+2025-06-27 15:59:42,701 - INFO - Đã click nút Bulk Actions cho topic: Home Life
+2025-06-27 15:59:42,728 - INFO - Số lượng key tìm được: 'Expected amount: ~1 212 keys'
+2025-06-27 15:59:42,728 - INFO - Chuỗi số thô: '1 212 ', Chuỗi sau xử lý: '1212'
+2025-06-27 15:59:42,728 - INFO - Số key sẽ xóa cho topic Home Life: 1212
+2025-06-27 15:59:56,365 - INFO - Đã xóa key cho topic Home Life và xác nhận hoàn tất
+2025-06-27 15:59:56,368 - INFO - Đã lưu số key đã xóa: 1212, tổng cộng: 545145 vào key_count.json
+2025-06-27 15:59:56,368 - ERROR - Lỗi khi lưu topic 'Home Life' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 15:59:56,771 - INFO - Đã reload trang sau khi xử lý topic Home Life
+2025-06-27 15:59:56,838 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 15:59:56,839 - INFO - Đã lưu topic 'Home Life' vào processed_topics.json
+2025-06-27 15:59:56,928 - INFO - Kiểm tra item: offline_recommend/114238014146917157/ước mơ
+2025-06-27 15:59:56,928 - INFO - Topic 'ước mơ' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:00:02,376 - INFO - Xử lý topic: ước mơ trong tab mới
+2025-06-27 16:00:02,476 - INFO - Đã nhập từ khóa: */ước mơ
+2025-06-27 16:00:02,521 - INFO - Đã nhấn Enter cho từ khóa: */ước mơ
+2025-06-27 16:00:02,642 - INFO - Đã click nút Bulk Actions cho topic: ước mơ
+2025-06-27 16:00:02,721 - INFO - Số lượng key tìm được: 'Expected amount: ~2 423 keys'
+2025-06-27 16:00:02,721 - INFO - Chuỗi số thô: '2 423 ', Chuỗi sau xử lý: '2423'
+2025-06-27 16:00:02,721 - INFO - Số key sẽ xóa cho topic ước mơ: 2423
+2025-06-27 16:00:18,625 - WARNING - Không tìm thấy nút DONE sau khi xóa topic ước mơ, không lưu số key
+2025-06-27 16:00:18,651 - INFO - Đã reload trang sau khi xử lý topic ước mơ
+2025-06-27 16:00:18,712 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:00:18,713 - INFO - Đã lưu topic 'ước mơ' vào processed_topics.json
+2025-06-27 16:00:18,742 - INFO - Kiểm tra item: offline_recommend/114549544921348870/Cún cưng
+2025-06-27 16:00:18,743 - INFO - Topic 'Cún cưng' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:00:24,741 - INFO - Xử lý topic: Cún cưng trong tab mới
+2025-06-27 16:00:24,835 - INFO - Đã nhập từ khóa: */Cún cưng
+2025-06-27 16:00:24,876 - INFO - Đã nhấn Enter cho từ khóa: */Cún cưng
+2025-06-27 16:00:24,982 - INFO - Đã click nút Bulk Actions cho topic: Cún cưng
+2025-06-27 16:00:25,051 - INFO - Số lượng key tìm được: 'Expected amount: ~3 634 keys'
+2025-06-27 16:00:25,051 - INFO - Chuỗi số thô: '3 634 ', Chuỗi sau xử lý: '3634'
+2025-06-27 16:00:25,051 - INFO - Số key sẽ xóa cho topic Cún cưng: 3634
+2025-06-27 16:00:38,653 - INFO - Đã xóa key cho topic Cún cưng và xác nhận hoàn tất
+2025-06-27 16:00:38,654 - INFO - Đã lưu số key đã xóa: 3634, tổng cộng: 548779 vào key_count.json
+2025-06-27 16:00:38,654 - ERROR - Lỗi khi lưu topic 'Cún cưng' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 16:00:39,151 - INFO - Đã reload trang sau khi xử lý topic Cún cưng
+2025-06-27 16:00:39,283 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:00:39,284 - INFO - Đã lưu topic 'Cún cưng' vào processed_topics.json
+2025-06-27 16:00:39,372 - INFO - Kiểm tra item: offline_recommend/114220650401766467/Quan hệ quốc tế
+2025-06-27 16:00:39,372 - INFO - Topic 'Quan hệ quốc tế' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:00:44,713 - INFO - Xử lý topic: Quan hệ quốc tế trong tab mới
+2025-06-27 16:00:54,933 - INFO - Không tìm thấy INPUT_SEARCH, reload trang (lần 1/3)
+2025-06-27 16:01:00,728 - INFO - Đã nhập từ khóa: */Quan hệ quốc tế
+2025-06-27 16:01:00,780 - INFO - Đã nhấn Enter cho từ khóa: */Quan hệ quốc tế
+2025-06-27 16:01:01,027 - INFO - Đã click nút Bulk Actions cho topic: Quan hệ quốc tế
+2025-06-27 16:01:01,114 - INFO - Số lượng key tìm được: 'Expected amount: ~2 423 keys'
+2025-06-27 16:01:01,114 - INFO - Chuỗi số thô: '2 423 ', Chuỗi sau xử lý: '2423'
+2025-06-27 16:01:01,114 - INFO - Số key sẽ xóa cho topic Quan hệ quốc tế: 2423
+2025-06-27 16:01:16,581 - WARNING - Không tìm thấy nút DONE sau khi xóa topic Quan hệ quốc tế, không lưu số key
+2025-06-27 16:01:17,522 - INFO - Đã reload trang sau khi xử lý topic Quan hệ quốc tế
+2025-06-27 16:01:17,629 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:01:17,632 - INFO - Đã lưu topic 'Quan hệ quốc tế' vào processed_topics.json
+2025-06-27 16:01:17,850 - INFO - Kiểm tra item: offline_recommend/114550355608599880/5132
+2025-06-27 16:01:17,850 - INFO - Topic '5132' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:01:23,638 - INFO - Xử lý topic: 5132 trong tab mới
+2025-06-27 16:01:23,719 - INFO - Đã nhập từ khóa: */5132
+2025-06-27 16:01:23,770 - INFO - Đã nhấn Enter cho từ khóa: */5132
+2025-06-27 16:01:23,882 - INFO - Đã click nút Bulk Actions cho topic: 5132
+2025-06-27 16:01:23,947 - INFO - Số lượng key tìm được: 'Expected amount: ~3 028 keys'
+2025-06-27 16:01:23,947 - INFO - Chuỗi số thô: '3 028 ', Chuỗi sau xử lý: '3028'
+2025-06-27 16:01:23,947 - INFO - Số key sẽ xóa cho topic 5132: 3028
+2025-06-27 16:01:37,556 - INFO - Đã xóa key cho topic 5132 và xác nhận hoàn tất
+2025-06-27 16:01:37,558 - INFO - Đã lưu số key đã xóa: 3028, tổng cộng: 551807 vào key_count.json
+2025-06-27 16:01:37,558 - ERROR - Lỗi khi lưu topic '5132' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 16:01:37,776 - INFO - Đã reload trang sau khi xử lý topic 5132
+2025-06-27 16:01:37,825 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:01:37,828 - INFO - Đã lưu topic '5132' vào processed_topics.json
+2025-06-27 16:01:37,863 - INFO - Kiểm tra item: offline_recommend/113978599431368362/Tình cảm quân dân
+2025-06-27 16:01:37,863 - INFO - Topic 'Tình cảm quân dân' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:01:43,603 - INFO - Xử lý topic: Tình cảm quân dân trong tab mới
+2025-06-27 16:01:43,721 - INFO - Đã nhập từ khóa: */Tình cảm quân dân
+2025-06-27 16:01:43,782 - INFO - Đã nhấn Enter cho từ khóa: */Tình cảm quân dân
+2025-06-27 16:01:43,908 - INFO - Đã click nút Bulk Actions cho topic: Tình cảm quân dân
+2025-06-27 16:01:43,971 - INFO - Số lượng key tìm được: 'Expected amount: ~3 027 keys'
+2025-06-27 16:01:43,971 - INFO - Chuỗi số thô: '3 027 ', Chuỗi sau xử lý: '3027'
+2025-06-27 16:01:43,971 - INFO - Số key sẽ xóa cho topic Tình cảm quân dân: 3027
+2025-06-27 16:01:57,375 - INFO - Đã xóa key cho topic Tình cảm quân dân và xác nhận hoàn tất
+2025-06-27 16:01:57,375 - INFO - Đã lưu số key đã xóa: 3027, tổng cộng: 554834 vào key_count.json
+2025-06-27 16:01:57,376 - ERROR - Lỗi khi lưu topic 'Tình cảm quân dân' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 16:01:57,393 - INFO - Đã reload trang sau khi xử lý topic Tình cảm quân dân
+2025-06-27 16:01:57,470 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:01:57,472 - INFO - Đã lưu topic 'Tình cảm quân dân' vào processed_topics.json
+2025-06-27 16:01:57,498 - INFO - Kiểm tra item: offline_recommend/113922334821259951/Mua bán - Đổi trả sản phẩm
+2025-06-27 16:01:57,498 - INFO - Topic 'Mua bán - Đổi trả sản phẩm' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:02:03,616 - INFO - Xử lý topic: Mua bán - Đổi trả sản phẩm trong tab mới
+2025-06-27 16:02:03,739 - INFO - Đã nhập từ khóa: */Mua bán - Đổi trả sản phẩm
+2025-06-27 16:02:03,815 - INFO - Đã nhấn Enter cho từ khóa: */Mua bán - Đổi trả sản phẩm
+2025-06-27 16:02:03,908 - INFO - Đã click nút Bulk Actions cho topic: Mua bán - Đổi trả sản phẩm
+2025-06-27 16:02:03,941 - INFO - Số lượng key tìm được: 'Expected amount: ~4 843 keys'
+2025-06-27 16:02:03,941 - INFO - Chuỗi số thô: '4 843 ', Chuỗi sau xử lý: '4843'
+2025-06-27 16:02:03,942 - INFO - Số key sẽ xóa cho topic Mua bán - Đổi trả sản phẩm: 4843
+2025-06-27 16:02:17,339 - INFO - Đã xóa key cho topic Mua bán - Đổi trả sản phẩm và xác nhận hoàn tất
+2025-06-27 16:02:17,340 - INFO - Đã lưu số key đã xóa: 4843, tổng cộng: 559677 vào key_count.json
+2025-06-27 16:02:17,340 - ERROR - Lỗi khi lưu topic 'Mua bán - Đổi trả sản phẩm' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 16:02:18,005 - INFO - Đã reload trang sau khi xử lý topic Mua bán - Đổi trả sản phẩm
+2025-06-27 16:02:18,082 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:02:18,085 - INFO - Đã lưu topic 'Mua bán - Đổi trả sản phẩm' vào processed_topics.json
+2025-06-27 16:02:18,205 - INFO - Kiểm tra item: offline_recommend/114549552745840950/Diễn viên hài
+2025-06-27 16:02:18,205 - INFO - Topic 'Diễn viên hài' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:02:23,470 - INFO - Xử lý topic: Diễn viên hài trong tab mới
+2025-06-27 16:02:33,679 - INFO - Không tìm thấy INPUT_SEARCH, reload trang (lần 1/3)
+2025-06-27 16:02:39,298 - INFO - Đã nhập từ khóa: */Diễn viên hài
+2025-06-27 16:02:39,390 - INFO - Đã nhấn Enter cho từ khóa: */Diễn viên hài
+2025-06-27 16:02:39,505 - INFO - Đã click nút Bulk Actions cho topic: Diễn viên hài
+2025-06-27 16:02:39,563 - INFO - Số lượng key tìm được: 'Expected amount: ~2 421 keys'
+2025-06-27 16:02:39,563 - INFO - Chuỗi số thô: '2 421 ', Chuỗi sau xử lý: '2421'
+2025-06-27 16:02:39,563 - INFO - Số key sẽ xóa cho topic Diễn viên hài: 2421
+2025-06-27 16:02:55,004 - INFO - Đã xóa key cho topic Diễn viên hài và xác nhận hoàn tất
+2025-06-27 16:02:55,004 - INFO - Đã lưu số key đã xóa: 2421, tổng cộng: 562098 vào key_count.json
+2025-06-27 16:02:55,005 - ERROR - Lỗi khi lưu topic 'Diễn viên hài' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 16:02:55,496 - INFO - Đã reload trang sau khi xử lý topic Diễn viên hài
+2025-06-27 16:02:55,570 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:02:55,572 - INFO - Đã lưu topic 'Diễn viên hài' vào processed_topics.json
+2025-06-27 16:02:55,745 - INFO - Kiểm tra item: offline_recommend/114716594695701102/thân phận bị tráo đổi
+2025-06-27 16:02:55,745 - INFO - Topic 'thân phận bị tráo đổi' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:03:01,264 - INFO - Xử lý topic: thân phận bị tráo đổi trong tab mới
+2025-06-27 16:03:01,396 - INFO - Đã nhập từ khóa: */thân phận bị tráo đổi
+2025-06-27 16:03:01,445 - INFO - Đã nhấn Enter cho từ khóa: */thân phận bị tráo đổi
+2025-06-27 16:03:01,525 - INFO - Đã click nút Bulk Actions cho topic: thân phận bị tráo đổi
+2025-06-27 16:03:02,060 - INFO - Số lượng key tìm được: 'Expected amount: ~2 824 keys'
+2025-06-27 16:03:02,060 - INFO - Chuỗi số thô: '2 824 ', Chuỗi sau xử lý: '2824'
+2025-06-27 16:03:02,060 - INFO - Số key sẽ xóa cho topic thân phận bị tráo đổi: 2824
+2025-06-27 16:03:17,716 - WARNING - Không tìm thấy nút DONE sau khi xóa topic thân phận bị tráo đổi, không lưu số key
+2025-06-27 16:03:17,912 - INFO - Đã reload trang sau khi xử lý topic thân phận bị tráo đổi
+2025-06-27 16:03:17,947 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:03:17,949 - INFO - Đã lưu topic 'thân phận bị tráo đổi' vào processed_topics.json
+2025-06-27 16:03:17,970 - INFO - Kiểm tra item: offline_recommend/114549555237301912/Thiết bị VR/AR
+2025-06-27 16:03:17,970 - INFO - Topic 'AR' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:03:23,459 - INFO - Xử lý topic: AR trong tab mới
+2025-06-27 16:03:23,546 - INFO - Đã nhập từ khóa: */AR
+2025-06-27 16:03:23,588 - INFO - Đã nhấn Enter cho từ khóa: */AR
+2025-06-27 16:03:23,690 - INFO - Đã click nút Bulk Actions cho topic: AR
+2025-06-27 16:03:23,741 - INFO - Số lượng key tìm được: 'Expected amount: ~1 815 keys'
+2025-06-27 16:03:23,741 - INFO - Chuỗi số thô: '1 815 ', Chuỗi sau xử lý: '1815'
+2025-06-27 16:03:23,741 - INFO - Số key sẽ xóa cho topic AR: 1815
+2025-06-27 16:03:37,162 - INFO - Đã xóa key cho topic AR và xác nhận hoàn tất
+2025-06-27 16:03:37,162 - INFO - Đã lưu số key đã xóa: 1815, tổng cộng: 563913 vào key_count.json
+2025-06-27 16:03:37,163 - ERROR - Lỗi khi lưu topic 'AR' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 16:03:37,720 - INFO - Đã reload trang sau khi xử lý topic AR
+2025-06-27 16:03:37,858 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:03:37,859 - INFO - Đã lưu topic 'AR' vào processed_topics.json
+2025-06-27 16:03:37,941 - INFO - Kiểm tra item: offline_recommend/114549586788577365/Đời Sống Cá Nhân
+2025-06-27 16:03:37,942 - INFO - Topic 'Đời Sống Cá Nhân' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:03:43,520 - INFO - Xử lý topic: Đời Sống Cá Nhân trong tab mới
+2025-06-27 16:03:43,698 - INFO - Đã nhập từ khóa: */Đời Sống Cá Nhân
+2025-06-27 16:03:43,751 - INFO - Đã nhấn Enter cho từ khóa: */Đời Sống Cá Nhân
+2025-06-27 16:03:43,866 - INFO - Đã click nút Bulk Actions cho topic: Đời Sống Cá Nhân
+2025-06-27 16:03:43,929 - INFO - Số lượng key tìm được: 'Expected amount: ~1 210 keys'
+2025-06-27 16:03:43,929 - INFO - Chuỗi số thô: '1 210 ', Chuỗi sau xử lý: '1210'
+2025-06-27 16:03:43,929 - INFO - Số key sẽ xóa cho topic Đời Sống Cá Nhân: 1210
+2025-06-27 16:03:57,398 - INFO - Đã xóa key cho topic Đời Sống Cá Nhân và xác nhận hoàn tất
+2025-06-27 16:03:57,399 - INFO - Đã lưu số key đã xóa: 1210, tổng cộng: 565123 vào key_count.json
+2025-06-27 16:03:57,399 - ERROR - Lỗi khi lưu topic 'Đời Sống Cá Nhân' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 16:03:57,823 - INFO - Đã reload trang sau khi xử lý topic Đời Sống Cá Nhân
+2025-06-27 16:03:57,884 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:03:57,885 - INFO - Đã lưu topic 'Đời Sống Cá Nhân' vào processed_topics.json
+2025-06-27 16:03:57,977 - INFO - Kiểm tra item: offline_recommend/113881244767400604/streamer Việt Nam
+2025-06-27 16:03:57,977 - INFO - Topic 'streamer Việt Nam' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:04:03,482 - INFO - Xử lý topic: streamer Việt Nam trong tab mới
+2025-06-27 16:04:03,630 - INFO - Đã nhập từ khóa: */streamer Việt Nam
+2025-06-27 16:04:03,692 - INFO - Đã nhấn Enter cho từ khóa: */streamer Việt Nam
+2025-06-27 16:04:03,809 - INFO - Đã click nút Bulk Actions cho topic: streamer Việt Nam
+2025-06-27 16:04:03,861 - INFO - Số lượng key tìm được: 'Expected amount: ~1 815 keys'
+2025-06-27 16:04:03,861 - INFO - Chuỗi số thô: '1 815 ', Chuỗi sau xử lý: '1815'
+2025-06-27 16:04:03,861 - INFO - Số key sẽ xóa cho topic streamer Việt Nam: 1815
+2025-06-27 16:04:17,644 - INFO - Đã xóa key cho topic streamer Việt Nam và xác nhận hoàn tất
+2025-06-27 16:04:17,645 - INFO - Đã lưu số key đã xóa: 1815, tổng cộng: 566938 vào key_count.json
+2025-06-27 16:04:17,645 - ERROR - Lỗi khi lưu topic 'streamer Việt Nam' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 16:04:17,662 - INFO - Đã reload trang sau khi xử lý topic streamer Việt Nam
+2025-06-27 16:04:17,742 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:04:17,743 - INFO - Đã lưu topic 'streamer Việt Nam' vào processed_topics.json
+2025-06-27 16:04:22,858 - INFO - Đang cuộn trong element LIST để tìm item tại index 27 (lần cuộn 1/10)
+2025-06-27 16:04:22,884 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 16:04:29,985 - INFO - Đang cuộn trong element LIST để tìm item tại index 27 (lần cuộn 2/10)
+2025-06-27 16:04:30,005 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 16:04:37,123 - INFO - Đang cuộn trong element LIST để tìm item tại index 27 (lần cuộn 3/10)
+2025-06-27 16:04:37,155 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 16:04:44,259 - INFO - Đang cuộn trong element LIST để tìm item tại index 27 (lần cuộn 4/10)
+2025-06-27 16:04:44,275 - INFO - Đã cuộn một đoạn trong element LIST để tải thêm item
+2025-06-27 16:04:46,295 - INFO - Kiểm tra item: offline_recommend/113963509574872049/Truyền thống Việt Nam
+2025-06-27 16:04:46,296 - INFO - Topic 'Truyền thống Việt Nam' không có trong topic.json. Thực hiện xóa...
+2025-06-27 16:04:52,372 - INFO - Xử lý topic: Truyền thống Việt Nam trong tab mới
+2025-06-27 16:04:52,566 - INFO - Đã nhập từ khóa: */Truyền thống Việt Nam
+2025-06-27 16:04:52,630 - INFO - Đã nhấn Enter cho từ khóa: */Truyền thống Việt Nam
+2025-06-27 16:04:52,777 - INFO - Đã click nút Bulk Actions cho topic: Truyền thống Việt Nam
+2025-06-27 16:04:52,851 - INFO - Số lượng key tìm được: 'Expected amount: ~3 024 keys'
+2025-06-27 16:04:52,852 - INFO - Chuỗi số thô: '3 024 ', Chuỗi sau xử lý: '3024'
+2025-06-27 16:04:52,852 - INFO - Số key sẽ xóa cho topic Truyền thống Việt Nam: 3024
+2025-06-27 16:05:05,578 - INFO - Đã xóa key cho topic Truyền thống Việt Nam và xác nhận hoàn tất
+2025-06-27 16:05:05,578 - INFO - Đã lưu số key đã xóa: 3024, tổng cộng: 569962 vào key_count.json
+2025-06-27 16:05:05,579 - ERROR - Lỗi khi lưu topic 'Truyền thống Việt Nam' vào deleted_topic.json: Expecting value: line 1 column 1 (char 0)
+2025-06-27 16:05:06,187 - INFO - Đã reload trang sau khi xử lý topic Truyền thống Việt Nam
+2025-06-27 16:05:06,275 - INFO - Đã đóng tab mới và quay lại tab ban đầu
+2025-06-27 16:05:06,278 - INFO - Đã lưu topic 'Truyền thống Việt Nam' vào processed_topics.json
+2025-06-27 16:05:08,098 - ERROR - Lỗi khi kiểm tra item tại index 28: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-06-27 16:05:14,249 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DB9F14ADB0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/db7d0ed0cc92400cd6bb250ffc38d826
+2025-06-27 16:05:18,360 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DB9F14B920>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/db7d0ed0cc92400cd6bb250ffc38d826
+2025-06-27 16:05:22,445 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001DB9F14B3B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/db7d0ed0cc92400cd6bb250ffc38d826
+2025-06-27 16:05:26,557 - INFO - Đã đóng trình duyệt
