@@ -1,18 +1,23 @@
 import json
 import logging
 import time
+import re
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium_helper import SeleniumHelper
 
-# Cấu hình logging
-logging.basicConfig(
-    filename='logging.log',
-    filemode='a',
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    level=logging.INFO,
-    encoding='utf-8'  # Giúp log ghi được tiếng Việt
-)
+
+# Cấu hình logging chỉ ghi vào file
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+
+# Xóa các handler cũ (nếu có) để tránh in ra terminal
+logger.handlers = []
+
+# Tạo FileHandler với mode='a' để ghi đè log
+file_handler = logging.FileHandler('logging.log', mode='a', encoding='utf-8')
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+logger.addHandler(file_handler)
 
 def load_account(file_path="account.json"):
     """Đọc thông tin tài khoản từ file JSON"""
@@ -73,6 +78,22 @@ def save_deleted_topic(topic, file_path="deleted_topic.json"):
     except Exception as e:
         logging.error(f"Lỗi khi lưu topic '{topic}' vào {file_path}: {e}")
 
+def save_key_count(keys_deleted, file_path="key_count.json"):
+    """Lưu số key đã xóa cộng dồn vào file JSON"""
+    try:
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                data = json.load(file)
+                total_keys_deleted = data.get("total_keys_deleted", 0)
+        except FileNotFoundError:
+            total_keys_deleted = 0
+        total_keys_deleted += keys_deleted
+        with open(file_path, 'w', encoding='utf-8') as file:
+            json.dump({"total_keys_deleted": total_keys_deleted}, file, ensure_ascii=False, indent=4)
+        logging.info(f"Đã lưu số key đã xóa: {keys_deleted}, tổng cộng: {total_keys_deleted} vào {file_path}")
+    except Exception as e:
+        logging.error(f"Lỗi khi lưu số key đã xóa vào {file_path}: {e}")
+
 def delete_key_by_topic(selenium, topic, url):
     """Xóa key theo topic đã cho trong tab mới"""
     # Định nghĩa các locator
@@ -81,6 +102,7 @@ def delete_key_by_topic(selenium, topic, url):
     COUNT_TOTAL = "/html/body/div/div/div[1]/main/div[2]/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div[2]/div/div/div/div[2]/div/div[2]/div[3]/div/div[1]/span[1]"
     DELETE_BUTTON = "//button[@class='euiButton euiButton--secondary euiButton--fill']//span[@class='euiButtonContent euiButton__content']"
     CONFIRM_DELETE = "//button[contains(@class, '_deleteApproveBtn_') and contains(@class, 'euiButton--warning') and contains(@class, 'euiButton--small')]"
+    DONE = "//span[@class='euiButton__text' and text()='Start New']"
 
     try:
         # Mở tab mới và truy cập URL
@@ -90,13 +112,13 @@ def delete_key_by_topic(selenium, topic, url):
         time.sleep(5)  # Chờ trang tải
 
         logging.info(f"Xử lý topic: {topic} trong tab mới")
-        search_keyword = f"collaborative_recommend/*/{topic}"
+        search_keyword = f"*/{topic}"
         
         # Kiểm tra và reload nếu INPUT_SEARCH không hiển thị
         max_retries = 3
         retry_count = 0
         while retry_count < max_retries:
-            input_element = selenium.find_element(By.XPATH, INPUT_SEARCH)
+            input_element = selenium.wait_for_element_to_appear(By.XPATH, INPUT_SEARCH, timeout=10)
             if input_element:
                 break
             logging.info(f"Không tìm thấy INPUT_SEARCH, reload trang (lần {retry_count + 1}/{max_retries})")
@@ -122,7 +144,7 @@ def delete_key_by_topic(selenium, topic, url):
         logging.info(f"Đã click nút Bulk Actions cho topic: {topic}")
         
         # Chờ để trang tải kết quả
-        selenium.wait_for_element_visible(By.XPATH, COUNT_TOTAL)
+        selenium.wait_for_element_to_appear(By.XPATH, COUNT_TOTAL, timeout=10)
         
         # Kiểm tra số lượng key
         count_element = selenium.find_element(By.XPATH, COUNT_TOTAL)
@@ -136,14 +158,31 @@ def delete_key_by_topic(selenium, topic, url):
                 return
             
             elif "Expected amount: ~" in count_text:
+                # Trích xuất số key từ count_text
+                match = re.search(r'Expected amount: ~(\d+)', count_text)
+                keys_deleted = int(match.group(1)) if match else 0
+                logging.info(f"Số key sẽ xóa cho topic {topic}: {keys_deleted}")
+                
                 # Click nút Delete
                 selenium.click_element(By.XPATH, DELETE_BUTTON)
                 
                 # Click nút Confirm Delete
                 selenium.click_element(By.XPATH, CONFIRM_DELETE)
                 
-                logging.info(f"Đã xóa key cho topic {topic}")
-                save_deleted_topic(topic)  # Lưu topic đã xóa thành công
+                done_element = selenium.wait_for_element_to_appear(By.XPATH, DONE, timeout=10)
+                if done_element:
+                    logging.info(f"Đã xóa key cho topic {topic} và xác nhận hoàn tất")
+                    # Lưu số key đã xóa
+                    if keys_deleted > 0:
+                        save_key_count(keys_deleted)
+                else:
+                    logging.warning(f"Không tìm thấy nút DONE sau khi xóa topic {topic}, nhưng topic đã được lưu")
+                    # Lưu số key đã xóa ngay cả khi không tìm thấy nút DONE
+                    if keys_deleted > 0:
+                        save_key_count(keys_deleted)
+                
+                # Lưu topic vào deleted_topic.json
+                save_deleted_topic(topic)
         
         # Reload trang
         selenium.driver.refresh()
@@ -187,7 +226,7 @@ def main():
         max_retries = 3
         retry_count = 0
         while retry_count < max_retries:
-            list_element = selenium.find_element(By.XPATH, LIST)
+            list_element = selenium.wait_for_element_to_appear(By.XPATH, LIST, timeout=10)
             if list_element:
                 break
             logging.info(f"Không tìm thấy LIST, reload trang (lần {retry_count + 1}/{max_retries})")
@@ -202,35 +241,57 @@ def main():
         while True:
             try:
                 item_xpath = ITEMS.format(index=index)
-                item_element = selenium.find_element(By.XPATH, item_xpath)
+                item_element = selenium.wait_for_element_to_appear(By.XPATH, item_xpath, timeout=5)
                 if not item_element:
+                    scrolled_to_top = False  # Biến theo dõi trạng thái cuộn lại từ đầu
+                    scroll_attempts = 0  # Đếm số lần cuộn
                     # Cuộn trong element LIST một đoạn vừa đủ
-                    while True:
+                    while scroll_attempts < 10:
                         list_element = selenium.find_element(By.XPATH, LIST)
                         if list_element:
                             # Lưu vị trí cuộn trước đó
                             scroll_position_before = selenium.execute_javascript("return arguments[0].scrollTop;", list_element)
+                            logging.info(f"Đang cuộn trong element LIST để tìm item tại index {index} (lần cuộn {scroll_attempts + 1}/10)")
                             # Cuộn một đoạn bằng 50% chiều cao của LIST
                             selenium.execute_javascript("arguments[0].scrollTop += arguments[0].clientHeight * 0.5;", list_element)
                             logging.info("Đã cuộn một đoạn trong element LIST để tải thêm item")
                             time.sleep(2)  # Chờ item tải
                             # Kiểm tra lại item
-                            item_element = selenium.find_element(By.XPATH, item_xpath)
+                            item_element = selenium.wait_for_element_to_appear(By.XPATH, item_xpath, timeout=5)
                             if item_element:
                                 break
                             # Kiểm tra vị trí cuộn mới
                             scroll_position_after = selenium.execute_javascript("return arguments[0].scrollTop;", list_element)
                             if scroll_position_before == scroll_position_after:
-                                logging.info("Không thể cuộn thêm trong element LIST")
-                                break
+                                if not scrolled_to_top:
+                                    # Cuộn lại từ đầu nếu đã cuộn hết mà không tìm thấy
+                                    selenium.execute_javascript("arguments[0].scrollTop = 0;", list_element)
+                                    logging.info(f"Đã cuộn lại từ đầu LIST để thử tìm item tại index {index}")
+                                    scrolled_to_top = True
+                                    time.sleep(2)  # Chờ sau khi cuộn lại
+                                    scroll_attempts += 1
+                                    continue
+                                else:
+                                    logging.info("Không thể cuộn thêm trong element LIST và đã thử cuộn lại từ đầu")
+                                    break
+                            scroll_attempts += 1
                     
                     if not item_element:
+                        if scroll_attempts >= 10:
+                            # Reload trang và bắt đầu lại từ index 1
+                            logging.info(f"Đã cuộn {scroll_attempts} lần mà không tìm thấy item tại index {index}. Reload trang và bắt đầu lại từ index 1.")
+                            selenium.driver.refresh()
+                            time.sleep(5)  # Chờ trang tải
+                            index = 1  # Đặt lại index
+                            scrolled_to_top = False  # Đặt lại trạng thái cuộn
+                            continue
+                        
                         # Thử click nút Scan more nếu không tìm thấy item sau khi cuộn
                         scan_more = selenium.find_element(By.XPATH, SCAN_MORE)
                         if scan_more:
                             selenium.click_element(By.XPATH, SCAN_MORE)
                             logging.info("Đã click nút 'Scan more' để tải thêm item")
-                            selenium.wait_for_element_visible(By.XPATH, item_xpath)
+                            selenium.wait_for_element_to_appear(By.XPATH, item_xpath, timeout=10)
                             item_element = selenium.find_element(By.XPATH, item_xpath)
                         else:
                             logging.info("Không tìm thấy nút 'Scan more'. Kết thúc lặp item.")
@@ -280,27 +341,48 @@ def main():
 
             except Exception as e:
                 logging.error(f"Lỗi khi kiểm tra item tại index {index}: {e}")
+                scrolled_to_top = False  # Biến theo dõi trạng thái cuộn lại từ đầu
+                scroll_attempts = 0  # Đếm số lần cuộn
                 # Cuộn trong element LIST một đoạn vừa đủ
-                while True:
+                while scroll_attempts < 10:
                     list_element = selenium.find_element(By.XPATH, LIST)
                     if list_element:
                         # Lưu vị trí cuộn trước đó
                         scroll_position_before = selenium.execute_javascript("return arguments[0].scrollTop;", list_element)
                         # Cuộn một đoạn bằng 50% chiều cao của LIST
                         selenium.execute_javascript("arguments[0].scrollTop += arguments[0].clientHeight * 0.5;", list_element)
-                        logging.info("Đã cuộn một đoạn trong element LIST để tải thêm item sau lỗi")
+                        logging.info(f"Đã cuộn một đoạn trong element LIST để tải thêm item sau lỗi (lần cuộn {scroll_attempts + 1}/10)")
                         time.sleep(2)  # Chờ item tải
                         # Kiểm tra lại item
-                        item_element = selenium.find_element(By.XPATH, item_xpath)
+                        item_element = selenium.wait_for_element_to_appear(By.XPATH, item_xpath, timeout=5)
                         if item_element:
                             break
                         # Kiểm tra vị trí cuộn mới
                         scroll_position_after = selenium.execute_javascript("return arguments[0].scrollTop;", list_element)
                         if scroll_position_before == scroll_position_after:
-                            logging.info("Không thể cuộn thêm trong element LIST")
-                            break
+                            if not scrolled_to_top:
+                                # Cuộn lại từ đầu nếu đã cuộn hết mà không tìm thấy
+                                selenium.execute_javascript("arguments[0].scrollTop = 0;", list_element)
+                                logging.info(f"Đã cuộn lại từ đầu LIST để thử tìm item tại index {index} sau lỗi")
+                                scrolled_to_top = True
+                                time.sleep(2)  # Chờ sau khi cuộn lại
+                                scroll_attempts += 1
+                                continue
+                            else:
+                                logging.info("Không thể cuộn thêm trong element LIST và đã thử cuộn lại từ đầu")
+                                break
+                        scroll_attempts += 1
                 
                 if not item_element:
+                    if scroll_attempts >= 10:
+                        # Reload trang và bắt đầu lại từ index 1
+                        logging.info(f"Đã cuộn {scroll_attempts} lần mà không tìm thấy item tại index {index} sau lỗi. Reload trang và bắt đầu lại từ index 1.")
+                        selenium.driver.refresh()
+                        time.sleep(5)  # Chờ trang tải
+                        index = 1  # Đặt lại index
+                        scrolled_to_top = False  # Đặt lại trạng thái cuộn
+                        continue
+                    
                     # Thử click nút Scan more nếu không tìm thấy item sau khi cuộn
                     scan_more = selenium.find_element(By.XPATH, SCAN_MORE)
                     if scan_more:
