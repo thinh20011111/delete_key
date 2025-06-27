@@ -56,6 +56,23 @@ def save_processed_topic(topic, file_path="processed_topics.json"):
     except Exception as e:
         logging.error(f"Lỗi khi lưu topic '{topic}' vào {file_path}: {e}")
 
+def save_deleted_topic(topic, file_path="deleted_topic.json"):
+    """Lưu topic đã xóa thành công vào file JSON"""
+    try:
+        deleted_topics = []
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                deleted_topics = json.load(file)
+        except FileNotFoundError:
+            pass
+        if topic not in deleted_topics:
+            deleted_topics.append(topic)
+            with open(file_path, 'w', encoding='utf-8') as file:
+                json.dump(deleted_topics, file, ensure_ascii=False, indent=4)
+            logging.info(f"Đã lưu topic '{topic}' vào {file_path}")
+    except Exception as e:
+        logging.error(f"Lỗi khi lưu topic '{topic}' vào {file_path}: {e}")
+
 def delete_key_by_topic(selenium, topic, url):
     """Xóa key theo topic đã cho trong tab mới"""
     # Định nghĩa các locator
@@ -75,6 +92,21 @@ def delete_key_by_topic(selenium, topic, url):
         logging.info(f"Xử lý topic: {topic} trong tab mới")
         search_keyword = f"collaborative_recommend/*/{topic}"
         
+        # Kiểm tra và reload nếu INPUT_SEARCH không hiển thị
+        max_retries = 3
+        retry_count = 0
+        while retry_count < max_retries:
+            input_element = selenium.find_element(By.XPATH, INPUT_SEARCH)
+            if input_element:
+                break
+            logging.info(f"Không tìm thấy INPUT_SEARCH, reload trang (lần {retry_count + 1}/{max_retries})")
+            selenium.driver.refresh()
+            time.sleep(5)
+            retry_count += 1
+        if not input_element:
+            logging.error(f"Không thể tìm thấy INPUT_SEARCH sau {max_retries} lần thử")
+            return
+
         # Nhập từ khóa vào ô input
         selenium.input_text(By.XPATH, INPUT_SEARCH, search_keyword)
         logging.info(f"Đã nhập từ khóa: {search_keyword}")
@@ -111,6 +143,7 @@ def delete_key_by_topic(selenium, topic, url):
                 selenium.click_element(By.XPATH, CONFIRM_DELETE)
                 
                 logging.info(f"Đã xóa key cho topic {topic}")
+                save_deleted_topic(topic)  # Lưu topic đã xóa thành công
         
         # Reload trang
         selenium.driver.refresh()
@@ -135,7 +168,7 @@ def main():
             return
 
         selenium.open_url(url)
-        time.sleep(5)
+        time.sleep(5)  # Chờ trang tải
 
         topics = load_topics()
         if not topics:
@@ -150,22 +183,37 @@ def main():
         LIST = "/html/body/div/div/div[1]/main/div[2]/div[1]/div/div/div[1]/div/div[2]/div[1]/div/div[1]/div/div/div[2]/div/div/div/div/div/div[2]"
         SCAN_MORE = "//span[contains(text(),'Scan more')]"
 
+        # Kiểm tra và reload nếu LIST không hiển thị
+        max_retries = 3
+        retry_count = 0
+        while retry_count < max_retries:
+            list_element = selenium.find_element(By.XPATH, LIST)
+            if list_element:
+                break
+            logging.info(f"Không tìm thấy LIST, reload trang (lần {retry_count + 1}/{max_retries})")
+            selenium.driver.refresh()
+            time.sleep(5)
+            retry_count += 1
+        if not list_element:
+            logging.error(f"Không thể tìm thấy LIST sau {max_retries} lần thử")
+            return
+
         index = 1
         while True:
             try:
                 item_xpath = ITEMS.format(index=index)
                 item_element = selenium.find_element(By.XPATH, item_xpath)
                 if not item_element:
-                    # Cuộn trong element LIST cho đến khi tìm thấy item
+                    # Cuộn trong element LIST một đoạn vừa đủ
                     while True:
                         list_element = selenium.find_element(By.XPATH, LIST)
                         if list_element:
                             # Lưu vị trí cuộn trước đó
                             scroll_position_before = selenium.execute_javascript("return arguments[0].scrollTop;", list_element)
-                            # Cuộn xuống cuối element LIST
-                            selenium.execute_javascript("arguments[0].scrollTop = arguments[0].scrollHeight;", list_element)
-                            logging.info("Đã cuộn xuống cuối element LIST để tải thêm item")
-                            time.sleep(2)  # Chờ item mới tải
+                            # Cuộn một đoạn bằng 50% chiều cao của LIST
+                            selenium.execute_javascript("arguments[0].scrollTop += arguments[0].clientHeight * 0.5;", list_element)
+                            logging.info("Đã cuộn một đoạn trong element LIST để tải thêm item")
+                            time.sleep(2)  # Chờ item tải
                             # Kiểm tra lại item
                             item_element = selenium.find_element(By.XPATH, item_xpath)
                             if item_element:
@@ -197,31 +245,51 @@ def main():
                 if topic in processed_topics:
                     logging.info(f"Topic '{topic}' đã được xử lý trước đó. Bỏ qua...")
                     save_processed_topic(topic)  # Vẫn lưu để đảm bảo nhất quán
+                    # Cuộn nhanh hơn vì topic không thỏa mãn
+                    list_element = selenium.find_element(By.XPATH, LIST)
+                    if list_element:
+                        scroll_position_before = selenium.execute_javascript("return arguments[0].scrollTop;", list_element)
+                        selenium.execute_javascript("arguments[0].scrollTop += arguments[0].clientHeight * 1.0;", list_element)
+                        logging.info("Đã cuộn nhanh trong element LIST vì topic đã xử lý")
+                        time.sleep(1)  # Chờ ngắn hơn
+                        scroll_position_after = selenium.execute_javascript("return arguments[0].scrollTop;", list_element)
+                        if scroll_position_before == scroll_position_after:
+                            logging.info("Không thể cuộn thêm trong element LIST")
                     index += 1
                     continue
 
                 if topic not in topics:
                     logging.info(f"Topic '{topic}' không có trong topic.json. Thực hiện xóa...")
-                    delete_key_by_topic(selenium, topic, url)  # Truyền url để mở tab mới
+                    delete_key_by_topic(selenium, topic, url)  # Xóa trong tab mới
                     save_processed_topic(topic)  # Lưu topic sau khi xóa
                 else:
                     logging.info(f"Topic '{topic}' có trong topic.json. Bỏ qua...")
                     save_processed_topic(topic)  # Lưu topic dù không xóa
+                    # Cuộn nhanh hơn vì topic không thỏa mãn
+                    list_element = selenium.find_element(By.XPATH, LIST)
+                    if list_element:
+                        scroll_position_before = selenium.execute_javascript("return arguments[0].scrollTop;", list_element)
+                        selenium.execute_javascript("arguments[0].scrollTop += arguments[0].clientHeight * 1.0;", list_element)
+                        logging.info("Đã cuộn nhanh trong element LIST vì topic có trong topic.json")
+                        time.sleep(1)  # Chờ ngắn hơn
+                        scroll_position_after = selenium.execute_javascript("return arguments[0].scrollTop;", list_element)
+                        if scroll_position_before == scroll_position_after:
+                            logging.info("Không thể cuộn thêm trong element LIST")
 
                 index += 1
 
             except Exception as e:
                 logging.error(f"Lỗi khi kiểm tra item tại index {index}: {e}")
-                # Cuộn trong element LIST cho đến khi tìm thấy item
+                # Cuộn trong element LIST một đoạn vừa đủ
                 while True:
                     list_element = selenium.find_element(By.XPATH, LIST)
                     if list_element:
                         # Lưu vị trí cuộn trước đó
                         scroll_position_before = selenium.execute_javascript("return arguments[0].scrollTop;", list_element)
-                        # Cuộn xuống cuối element LIST
-                        selenium.execute_javascript("arguments[0].scrollTop = arguments[0].scrollHeight;", list_element)
-                        logging.info("Đã cuộn xuống cuối element LIST để tải thêm item sau lỗi")
-                        time.sleep(2)  # Chờ item mới tải
+                        # Cuộn một đoạn bằng 50% chiều cao của LIST
+                        selenium.execute_javascript("arguments[0].scrollTop += arguments[0].clientHeight * 0.5;", list_element)
+                        logging.info("Đã cuộn một đoạn trong element LIST để tải thêm item sau lỗi")
+                        time.sleep(2)  # Chờ item tải
                         # Kiểm tra lại item
                         item_element = selenium.find_element(By.XPATH, item_xpath)
                         if item_element:
