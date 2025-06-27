@@ -6,7 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium_helper import SeleniumHelper
 
-
 # Cấu hình logging chỉ ghi vào file
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -87,6 +86,9 @@ def save_key_count(keys_deleted, file_path="key_count.json"):
                 total_keys_deleted = data.get("total_keys_deleted", 0)
         except FileNotFoundError:
             total_keys_deleted = 0
+        except json.JSONDecodeError as e:
+            logging.error(f"Lỗi định dạng JSON trong {file_path}: {e}")
+            total_keys_deleted = 0
         total_keys_deleted += keys_deleted
         with open(file_path, 'w', encoding='utf-8') as file:
             json.dump({"total_keys_deleted": total_keys_deleted}, file, ensure_ascii=False, indent=4)
@@ -150,7 +152,7 @@ def delete_key_by_topic(selenium, topic, url):
         count_element = selenium.find_element(By.XPATH, COUNT_TOTAL)
         if count_element:
             count_text = count_element.text
-            logging.info(f"Số lượng key tìm được: {count_text}")
+            logging.info(f"Số lượng key tìm được: '{count_text}'")
             
             if "Expected amount: N/A" in count_text:
                 logging.info(f"Không có key để xóa cho topic {topic}. Reload trang...")
@@ -159,9 +161,20 @@ def delete_key_by_topic(selenium, topic, url):
             
             elif "Expected amount: ~" in count_text:
                 # Trích xuất số key từ count_text
-                match = re.search(r'Expected amount: ~(\d+)', count_text)
-                keys_deleted = int(match.group(1)) if match else 0
-                logging.info(f"Số key sẽ xóa cho topic {topic}: {keys_deleted}")
+                match = re.search(r'Expected amount: ~([\d\s]+)\s*(?:keys)?', count_text)
+                if match:
+                    # Loại bỏ tất cả khoảng trắng từ chuỗi số
+                    key_str = re.sub(r'\s+', '', match.group(1)).strip()
+                    logging.info(f"Chuỗi số thô: '{match.group(1)}', Chuỗi sau xử lý: '{key_str}'")
+                    try:
+                        keys_deleted = int(key_str) if key_str else 0
+                    except ValueError as e:
+                        logging.error(f"Lỗi khi chuyển đổi chuỗi '{key_str}' thành số nguyên: {e}")
+                        keys_deleted = 0
+                    logging.info(f"Số key sẽ xóa cho topic {topic}: {keys_deleted}")
+                else:
+                    keys_deleted = 0
+                    logging.warning(f"Không trích xuất được số key từ '{count_text}' cho topic {topic}")
                 
                 # Click nút Delete
                 selenium.click_element(By.XPATH, DELETE_BUTTON)
@@ -169,20 +182,19 @@ def delete_key_by_topic(selenium, topic, url):
                 # Click nút Confirm Delete
                 selenium.click_element(By.XPATH, CONFIRM_DELETE)
                 
-                done_element = selenium.wait_for_element_to_appear(By.XPATH, DONE, timeout=10)
+                # Tăng timeout cho nút DONE
+                done_element = selenium.wait_for_element_to_appear(By.XPATH, DONE, timeout=15)
                 if done_element:
                     logging.info(f"Đã xóa key cho topic {topic} và xác nhận hoàn tất")
-                    # Lưu số key đã xóa
+                    # Lưu số key đã xóa chỉ khi xóa thành công
                     if keys_deleted > 0:
                         save_key_count(keys_deleted)
+                    else:
+                        logging.warning(f"Số key bằng 0, không lưu vào key_count.json cho topic {topic}")
+                    # Lưu topic vào deleted_topic.json
+                    save_deleted_topic(topic)
                 else:
-                    logging.warning(f"Không tìm thấy nút DONE sau khi xóa topic {topic}, nhưng topic đã được lưu")
-                    # Lưu số key đã xóa ngay cả khi không tìm thấy nút DONE
-                    if keys_deleted > 0:
-                        save_key_count(keys_deleted)
-                
-                # Lưu topic vào deleted_topic.json
-                save_deleted_topic(topic)
+                    logging.warning(f"Không tìm thấy nút DONE sau khi xóa topic {topic}, không lưu số key")
         
         # Reload trang
         selenium.driver.refresh()
